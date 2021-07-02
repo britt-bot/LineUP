@@ -1,13 +1,12 @@
 import React from "react";
+import { Container, Col, Row } from 'react-bootstrap';
 import Hero from "../components/Hero";
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Col from "../components/Col";
+
 
 function Homepage() {
   return (
     <div>
-      <Hero backgroundImage="https://i.imgur.com/qkdpN.jpg">
+      <Hero backgroundImage="https://i.imgur.com/vIfKF0h.png">
         <h1>LineUp</h1>
       </Hero>
       <Container style={{ marginTop: 30 }}>

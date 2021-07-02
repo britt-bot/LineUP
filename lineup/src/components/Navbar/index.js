@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
-        Pupster
+        <img class="logo" alt="logo" src="../pictures/logo4.png"></img>
       </Link>
       <div>
         <ul className="navbar-nav">
@@ -15,13 +15,44 @@ function Navbar() {
             <Link
               to="/"
               className={
-                window.location.pathname === "/" ||
-                window.location.pathname === "/homepage"
+                window.location.pathname === "/" || window.location.pathname === "/homepage"
                   ? "nav-link active"
                   : "nav-link"
               }
             >
-              Homepage
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/discover"
+              className={window.location.pathname === "/discover" ? "nav-link active" : "nav-link"}
+            >
+              Discover
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/search"
+              className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
+            >
+              Search
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/festival"
+              className={window.location.pathname === "/festival" ? "nav-link active" : "nav-link"}
+            >
+              Festivals
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/Login"
+              className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}
+            >
+              Login
             </Link>
           </li>
         </ul>
@@ -30,4 +61,9 @@ function Navbar() {
   );
 }
 
+
+
 export default Navbar;
+
+
+
