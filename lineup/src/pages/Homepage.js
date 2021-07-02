@@ -1,7 +1,9 @@
 import React from "react";
-import { Hero, Container, Row, Col, Button } from 'react-bootstrap';
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Col, Row } from 'react-bootstrap';
+import Hero from "../components/Hero";
+// import Container from "../components/Container";
+// import Row from "../components/Row";
+// import Col from "../components/Col";
 
 function Homepage() {
   return (
