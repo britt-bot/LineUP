@@ -1,0 +1,13 @@
+.logo {
+  /* margin: 10px; */
+  max-height: 100px;
+  /* transform: translate(30%, 0%); */
+}
+
+nav.navbar.navbar-default {
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  margin-right: 50px;
+}
