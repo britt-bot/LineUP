@@ -9,7 +9,7 @@ import Users from "./pages/Users"
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
-import "./index.css";
+import "./App.css";
 
 function App() {
   return (

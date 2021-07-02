@@ -7,14 +7,10 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
-<<<<<<< HEAD
     "bootstrap": "^5.0.2",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.13.0",
-=======
-    "bootstrap": "^4.6.0",
->>>>>>> 74b69ed5bcdfb4839eaabd543fec5629c62d5481
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.2",
