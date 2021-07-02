@@ -1,7 +1,10 @@
 // import React, { Component } from "react";
+// import { Card, Alert, Button } from 'react-bootstrap';
 // import API from "../utils/API";
-// import Card from "../components/Card";
-// import Alert from "../components/Alert";
+// import axios from "axios";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import './index.css';
+
 
 // class Discover extends Component {
 //   state = {

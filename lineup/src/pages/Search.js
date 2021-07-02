@@ -1,9 +1,11 @@
 // import React, { Component } from "react";
+// import { Container, Alert } from 'react-bootstrap';
 // import API from "../utils/API";
-// import Container from "../components/Container";
+// import axios from "axios";
 // import SearchForm from "../components/SearchForm";
 // import SearchResults from "../components/SearchResults";
-// import Alert from "../components/Alert";
+// import './index.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 // class Search extends Component {
 //   state = {
