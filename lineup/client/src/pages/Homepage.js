@@ -6,7 +6,7 @@ import Hero from "../components/Hero";
 function Homepage() {
   return (
     <div>
-      <Hero backgroundImage="https://i.imgur.com/vIfKF0h.png">
+      <Hero backgroundImage="../pictures/rainbowconfetti.jpg">
         <h1>LineUp</h1>
       </Hero>
       <Container style={{ marginTop: 30 }}>
