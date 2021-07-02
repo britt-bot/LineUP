@@ -1,9 +1,7 @@
 import React from "react";
 import { Container, Col, Row } from 'react-bootstrap';
 import Hero from "../components/Hero";
-// import Container from "../components/Container";
-// import Row from "../components/Row";
-// import Col from "../components/Col";
+
 
 function Homepage() {
   return (
