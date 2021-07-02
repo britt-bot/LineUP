@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
-        LineUp
+        <img class="logo" alt="logo" src="../pictures/logo4.png"></img>
       </Link>
       <div>
         <ul className="navbar-nav">
