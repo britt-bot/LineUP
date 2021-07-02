@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Homepage() {
   return (
     <div>
-      <Hero backgroundImage="https://i.imgur.com/qkdpN.jpg">
+      <Hero backgroundImage="https://i.imgur.com/vIfKF0h.png">
         <h1>LineUp</h1>
       </Hero>
       <Container style={{ marginTop: 30 }}>
