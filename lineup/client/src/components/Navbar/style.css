@@ -1,3 +1,7 @@
+* {
+  border: 1px dotted red;
+}
+
 .logo {
   /* margin: 10px; */
   max-height: 100px;
@@ -6,8 +10,22 @@
 
 nav.navbar.navbar-default {
   margin-bottom: 0;
+  
 }
 
 .navbar-brand {
   margin-right: 50px;
+}
+
+
+@media (min-width: 992px){
+  .navbar-expand-lg.navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.searchbtn.form-inline {
+  display: flex;
+  background-color: red;
 }
