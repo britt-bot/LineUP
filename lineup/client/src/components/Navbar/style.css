@@ -27,12 +27,3 @@ nav.navbar.navbar-default {
     max-width: fit-content;
   }
 }
-
-.searchbtn.form-inline {
-  display: flex;
-  background-color: red;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
