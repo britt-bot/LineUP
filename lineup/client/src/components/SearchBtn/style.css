@@ -1,0 +1,25 @@
+.searchbtn.form-inline {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ion-icon {
+  padding-top: 2px;
+  font-size: 24px;
+    --ionicon-stroke-width: 24px;
+}
+
+@media (min-width: 350px) {
+  /* ion-icon{
+    font-size: 12px;
+  } */
+  .searchbtn.form-inline{
+    display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%)
+}
+}
