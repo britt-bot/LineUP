@@ -10,10 +10,20 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
-    <RbNavBar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <RbNavBar
+      sticky="top"
+      collapseOnSelect
+      expand="lg"
+      bg="dark"
+      variant="light"
+    >
       <Link className="navbar-brand" to="/">
-        <img class="logo" alt="logo" src={Logo}></img>
+        <img className="logo" alt="logo" src={Logo}></img>
       </Link>
+      <Form inline className="searchbtn">
+        <FormControl type="text" placeholder="Search" className=" mr-sm-2" />
+        <Button variant="outline-primary">Submit</Button>
+      </Form>
       <RbNavBar.Toggle />
       <RbNavBar.Collapse>
         <Nav className="mr-auto">
@@ -59,10 +69,6 @@ function Navbar() {
           </NavDropdown>
         </Nav>
       </RbNavBar.Collapse>
-      <Form inline className="searchbtn">
-        <FormControl type="text" placeholder="Search" className=" mr-sm-2" />
-        <Button variant="outline-primary">Submit</Button>
-      </Form>
     </RbNavBar>
   );
 }
