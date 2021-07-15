@@ -6,9 +6,29 @@ import { Button, Form, FormControl } from "react-bootstrap";
 import RbNavBar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { useState } from "react";
+import axios from "axios";
+
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
+console.log(process.env.REACT_APP_EVENT_API_KEY);
+const [search,setSearch] = useState('');
+
+const handleClick = async (event) =>{
+  console.log("clicked");
+  event.preventDefault();
+
+  const url = `https://app.ticketmaster.com/discovery/v2/events?apikey=${process.env.REACT_APP_EVENT_API_KEY}&keyword=`
+
+  const response = await axios.get(url + search + '&locale=en-us&countryCode=US&segmentName=music&page=1');
+};
+
+const handleChange = (event) => {
+  console.log(event.target.value);
+  setSearch(event.target.value);
+};
+
   return (
     <RbNavBar
       sticky="top"
@@ -20,10 +40,6 @@ function Navbar() {
       <Link className="navbar-brand" to="/">
         <img className="logo" alt="logo" src={Logo}></img>
       </Link>
-      <Form inline className="searchbtn">
-        <FormControl type="text" placeholder="Search" className=" mr-sm-2" />
-        <Button variant="outline-primary">Submit</Button>
-      </Form>
       <RbNavBar.Toggle />
       <RbNavBar.Collapse>
         <Nav className="mr-auto">
@@ -69,6 +85,10 @@ function Navbar() {
           </NavDropdown>
         </Nav>
       </RbNavBar.Collapse>
+      <Form inline className="searchbtn">
+        <FormControl type="text" placeholder="Search" className=" mr-sm-2" onChange={handleChange}/>
+        <Button variant="outline-primary" onClick={handleClick}>Submit</Button>
+      </Form>
     </RbNavBar>
   );
 }
