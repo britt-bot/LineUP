@@ -40,10 +40,6 @@ const handleChange = (event) => {
       <Link className="navbar-brand" to="/">
         <img className="logo" alt="logo" src={Logo}></img>
       </Link>
-      <Form inline className="searchbtn">
-        <FormControl type="text" placeholder="Search" className=" mr-sm-2" />
-        <Button variant="outline-primary">Submit</Button>
-      </Form>
       <RbNavBar.Toggle />
       <RbNavBar.Collapse>
         <Nav className="mr-auto">
