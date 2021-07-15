@@ -1,5 +1,5 @@
 * {
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 
 .logo {
@@ -23,9 +23,16 @@ nav.navbar.navbar-default {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+  .navbar-expand-lg.navbar-expand-lg .navbar-collapse{
+    max-width: fit-content;
+  }
 }
 
 .searchbtn.form-inline {
   display: flex;
   background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
