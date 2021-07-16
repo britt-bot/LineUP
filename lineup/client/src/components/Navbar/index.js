@@ -58,8 +58,23 @@ function Navbar() {
               Discover
             </Link>
           </Nav>
-          <NavDropdown title="More" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#Signup">Sign Up</NavDropdown.Item>
+          <NavDropdown
+            title="More"
+            align="end"
+            id="collasible-nav-dropdown dropdown-menu-offet"
+          >
+            <NavDropdown.Item>
+              <Link
+                to="/search"
+                className={
+                  window.location.pathname === "/search"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
+              >
+                Search Results
+              </Link>
+            </NavDropdown.Item>
             <NavDropdown.Item href="#action/2">action 2</NavDropdown.Item>
             <NavDropdown.Item href="#action/3">action 3</NavDropdown.Item>
             <NavDropdown.Divider />
