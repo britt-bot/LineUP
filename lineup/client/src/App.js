@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
 import "./App.css";
+import Discover from "./pages/Discover";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Users />
         <Wrapper>
           <Route exact path="/" component={Homepage} />
+          <Route exact path="/discover" component={Discover} />
         </Wrapper>
         <Footer />
       </div>
