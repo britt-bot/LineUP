@@ -5,7 +5,7 @@ import Logo from "../images/logo4.png";
 import RbNavBar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Searchbtn from "../SearchBtn";
+import SearchBtn from "../SearchBtn";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
@@ -20,7 +20,7 @@ function Navbar() {
       <Link className="navbar-brand" to="/">
         <img className="logo" alt="logo" src={Logo}></img>
       </Link>
-      <Searchbtn></Searchbtn>
+      <SearchBtn></SearchBtn>
 
       <RbNavBar.Toggle />
       <RbNavBar.Collapse>
