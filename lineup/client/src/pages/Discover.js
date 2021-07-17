@@ -1,11 +1,17 @@
-// import React from "react";
-// import DiscoverCarousel from "../components/DiscoverCarousel";
-// import SearchResultsCard from "../components/SearchResultsCard";
-// import { Row } from "react-bootstrap";
+import React from "react";
+import { Link } from "react-router-dom";
 // import API from "../utils/API";
 // import axios from "axios";
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import './index.css';
+
+function Discover() {
+  return (
+    <div>
+      <h2>
+        In Progress, please return <Link to="/">home</Link>.
+      </h2>
+    </div>
+  );
+}
 
 // function Discover() {
 // class Discover extends Component {
@@ -78,4 +84,4 @@
 //   );
 // }
 
-// export default Discover;
+export default Discover;

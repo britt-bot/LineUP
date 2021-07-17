@@ -57,18 +57,26 @@ function Navbar() {
             >
               Discover
             </Link>
+            <Link
+              to="/profile"
+              className={
+                window.location.pathname === "/profile"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              Profile
+            </Link>
           </Nav>
-          {/* <NavDropdown
+          <NavDropdown
             title="More"
             align="end"
             id="collasible-nav-dropdown dropdown-menu-offet"
           >
-            <NavDropdown.Item></NavDropdown.Item>
-            <NavDropdown.Item href="#action/2">action 2</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3">action 3</NavDropdown.Item>
+            <NavDropdown.Item href="#Create">Create LINEUP</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/4">action 4</NavDropdown.Item>
-          </NavDropdown> */}
+            <NavDropdown.Item href="#Signup">Sign Up</NavDropdown.Item>
+          </NavDropdown>
         </Nav>
       </RbNavBar.Collapse>
     </RbNavBar>
