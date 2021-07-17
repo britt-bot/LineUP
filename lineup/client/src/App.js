@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import Discover from "./pages/Discover";
+// import Discover from "./pages/Discover";
 import Search from "./pages/Search";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Users />
         <Wrapper>
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/discover" component={Discover} />
+          {/* <Route exact path="/discover" component={Discover} /> */}
           <Route exact path="/search" component={Search} />
         </Wrapper>
         <Footer />
