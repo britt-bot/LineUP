@@ -14,8 +14,8 @@ function Navbar() {
       sticky="top"
       collapseOnSelect
       expand="lg"
-      bg="light"
-      variant="light"
+      bg="dark"
+      variant="dark"
     >
       <Link className="navbar-brand" to="/">
         <img className="logo" alt="logo" src={Logo}></img>
@@ -57,16 +57,27 @@ function Navbar() {
             >
               Discover
             </Link>
+            <Link
+              to="/profile"
+              className={
+                window.location.pathname === "/profile"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              Profile
+            </Link>
           </Nav>
           <NavDropdown
             title="More"
             align="end"
-            id="collasible-nav-dropdown dropdown-menu-offet">
+            id="collasible-nav-dropdown dropdown-menu-offet"
+          >
             <NavDropdown.Item href="#Create">Create LINEUP</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#Signup">Sign Up</NavDropdown.Item>
           </NavDropdown>
-          </Nav>
+        </Nav>
       </RbNavBar.Collapse>
     </RbNavBar>
   );
