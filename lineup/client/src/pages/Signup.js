@@ -1,18 +1,8 @@
 import React from "react";
+import SignupForm from "../components/SignupForm";
 
-const SignUp = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "Right",
-        alignItems: "Right",
-        height: "100vh",
-      }}
-    >
-      <h1>Sign Up</h1>
-    </div>
-  );
+const Signup = () => {
+  return <SignupForm />;
 };
 
-export default SignUp;
+export default Signup;
