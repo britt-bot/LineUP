@@ -61,12 +61,13 @@ function Navbar() {
           <NavDropdown
             title="More"
             align="end"
-            id="collasible-nav-dropdown dropdown-menu-offet">
+            id="collasible-nav-dropdown dropdown-menu-offet"
+          >
             <NavDropdown.Item href="#Create">Create LINEUP</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#Signup">Sign Up</NavDropdown.Item>
           </NavDropdown>
-          </Nav>
+        </Nav>
       </RbNavBar.Collapse>
     </RbNavBar>
   );
