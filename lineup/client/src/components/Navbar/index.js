@@ -66,8 +66,7 @@ function Navbar() {
             <NavDropdown.Divider />
             <NavDropdown.Item href="#Signup">Sign Up</NavDropdown.Item>
           </NavDropdown>
-
-        </Nav>
+          </Nav>
       </RbNavBar.Collapse>
     </RbNavBar>
   );
