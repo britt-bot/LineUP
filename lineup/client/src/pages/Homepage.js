@@ -2,10 +2,12 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Hero from "../components/Hero";
 import BackgroundImage from "../components/images/rainbowconfetti.jpg";
+import "../App.css"
+
 
 function Homepage() {
   return (
-    <div>
+    <div className="homepage">
       <Hero backgroundImage={BackgroundImage}>
         <h1>LINEUP</h1>
         <h2>Pick the best LINEUP!</h2>

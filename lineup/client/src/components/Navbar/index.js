@@ -14,8 +14,8 @@ function Navbar() {
       sticky="top"
       collapseOnSelect
       expand="lg"
-      bg="light"
-      variant="light"
+      bg="dark"
+      variant="dark"
     >
       <Link className="navbar-brand" to="/">
         <img className="logo" alt="logo" src={Logo}></img>

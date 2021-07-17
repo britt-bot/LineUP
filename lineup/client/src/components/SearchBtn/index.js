@@ -77,7 +77,7 @@ function Searchbtn() {
       />
       <Button
         className="searchclick"
-        variant="outline-dark"
+        variant="outline-light"
         onClick={handleClick}
       >
         <ion-icon name="search-outline"></ion-icon>
