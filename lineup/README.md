@@ -21,8 +21,8 @@ This table of contents is to make it easy for users to find what they need.
 Open the desired web browser and go to the page url for either the Repo or the Deployed project.
 
 [Group Project #3 - LineUP GitHub Repo](https://github.com/britt-bot/Group_Project3)
-[Group Project #3 - LineUP GitHub Deploy]()
-[Group Project #3 - LineUP Heroku Deploy]()
+<!-- [Group Project #3 - LineUP GitHub Deploy]()
+[Group Project #3 - LineUP Heroku Deploy]() -->
 
 
 
