@@ -3,24 +3,22 @@ const db = require("../models");
 
 // This file empties the Books collection and inserts the books below
 
-mongoose.connect(
-  process.env.MONGODB_URI ||
-  "mongodb://localhost/lineuplist"
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lineuplist");
 
 const userSeed = [
-    {
-        userName: "Dennis"
-}];
+  {
+    email: "Dennisthemenace@gmail.com",
+    password: "candice",
+  },
+];
 
-db.User
-  .remove({})
+db.User.remove({})
   .then(() => db.User.collection.insertMany(userSeed))
-  .then(data => {
+  .then((data) => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err);
     process.exit(1);
   });

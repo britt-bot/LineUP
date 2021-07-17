@@ -1,11 +1,13 @@
-// import React, { Component } from "react";
-// import { Card, Alert, Button } from 'react-bootstrap';
+// import React from "react";
+// import DiscoverCarousel from "../components/DiscoverCarousel";
+// import SearchResultsCard from "../components/SearchResultsCard";
+// import { Row } from "react-bootstrap";
 // import API from "../utils/API";
 // import axios from "axios";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import './index.css';
 
-
+// function Discover() {
 // class Discover extends Component {
 //   state = {
 //     image: "",
@@ -31,7 +33,7 @@
 
 //       // Set newState.matchCount equal to its current value or its current value + 1 depending on whether the dog likes us
 //       newState.matchCount = newState.match
-//         ? newState.matchCount + 1
+// ? newState.matchCount + 1
 //         : newState.matchCount;
 //     } else {
 //       // If we thumbs down'ed the dog, we haven't matched with it
@@ -52,23 +54,28 @@
 //       .catch(err => console.log(err));
 //   };
 
-//   render() {
-//     return (
-//       <div>
-//         <h1 className="text-center">Make New Friends</h1>
-//         <h3 className="text-center">
-//           Thumbs up on any pups you'd like to meet!
-//         </h3>
-//         <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
-//         <h1 className="text-center">
-//           Made friends with {this.state.matchCount} pups so far!
-//         </h1>
-//         <Alert style={{ opacity: this.state.match ? 1 : 0 }} type="success">
-//           Yay! That Pup Liked You Too!!!
-//         </Alert>
-//       </div>
-//     );
-//   }
+// function Discover() {
+//   return (
+//     <DiscoverCarousel />
+
+// WORKING ON SWIPE RIGHT //
+
+// const data = ['Alexandre', 'Thomas', 'Lucien']
+
+// const Wrapper = () => {
+//   return (
+// 	  <Cards onEnd={action('end')} className='master-root'>
+//         {data.map(item =>
+//           <Card
+//             onSwipeLeft={action('swipe left')}
+//             onSwipeRight={action('swipe right')}>
+//             <h2>{item}</h2>
+//           </Card>
+//         )}
+//       </Cards>
+//   )
+// }
+//   );
 // }
 
 // export default Discover;

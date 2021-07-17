@@ -13,6 +13,10 @@ nav.navbar.navbar-default {
   margin-right: 50px;
 }
 
+.dropdown-menu .show{
+  background-color: blue;
+margin-right: 20px;
+}
 
 @media (min-width: 992px){
   .navbar-expand-lg.navbar-expand-lg {
