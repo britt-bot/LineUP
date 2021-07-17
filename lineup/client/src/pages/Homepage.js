@@ -7,7 +7,7 @@ import "../App.css"
 
 function Homepage() {
   return (
-    <div className="homepage">
+    <div>
       <Hero backgroundImage={BackgroundImage}>
         <h1>LINEUP</h1>
         <h2>Pick the best LINEUP!</h2>
