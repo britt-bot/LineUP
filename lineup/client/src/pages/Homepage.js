@@ -13,18 +13,13 @@ function Homepage() {
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
-            <p>
+            <p className="text-center">
               LINEUP is for every festival lover. 
               <br />We are bringing all the festivals around the world to you 
               <br />AND also giving you the power to dream up your ideal LINEUP for the LineUP community to upvote the best LINEUPs. 
             </p>
           </Col>
         </Row>
-        {/* <Row>
-          <Col size="md-12">
-
-          </Col>
-        </Row> */}
       </Container>
     </div>
   );
