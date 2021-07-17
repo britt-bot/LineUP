@@ -57,6 +57,16 @@ function Navbar() {
             >
               Discover
             </Link>
+            <Link
+              to="/profile"
+              className={
+                window.location.pathname === "/profile"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              Profile
+            </Link>
           </Nav>
           <NavDropdown
             title="More"
