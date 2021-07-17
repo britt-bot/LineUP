@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./style.css";
-import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Card, ListGroup, ListGroupItem, Button } from "react-bootstrap";
 
 function SearchResultsCard(props) {
   // console.log(props);
@@ -25,6 +25,13 @@ function SearchResultsCard(props) {
         <Card.Link href={ticket} target="_blank">
           Buy Tickets
         </Card.Link>
+        <Button
+          className="favBtn"
+          variant="outline-transparent"
+          // onClick=
+        >
+          <ion-icon name="star-outline"></ion-icon>
+        </Button>
       </Card.Body>
     </Card>
   );

@@ -4,7 +4,7 @@ import "./style.css";
 import Logo from "../images/logo4.png";
 import RbNavBar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 import Searchbtn from "../SearchBtn";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
@@ -56,16 +56,6 @@ function Navbar() {
               }
             >
               Discover
-            </Link>
-            <Link
-              to="/search"
-              className={
-                window.location.pathname === "/search"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              Search
             </Link>
           </Nav>
           {/* <NavDropdown

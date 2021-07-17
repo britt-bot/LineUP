@@ -1,5 +1,5 @@
-import React from "react";
-import DiscoverCarousel from "../components/DiscoverCarousel";
+// import React from "react";
+// import DiscoverCarousel from "../components/DiscoverCarousel";
 // import SearchResultsCard from "../components/SearchResultsCard";
 // import { Row } from "react-bootstrap";
 // import API from "../utils/API";
@@ -54,28 +54,28 @@ import DiscoverCarousel from "../components/DiscoverCarousel";
 //       .catch(err => console.log(err));
 //   };
 
-function Discover() {
-  return (
-    <DiscoverCarousel />
+// function Discover() {
+//   return (
+//     <DiscoverCarousel />
 
-    // WORKING ON SWIPE RIGHT //
+// WORKING ON SWIPE RIGHT //
 
-    // const data = ['Alexandre', 'Thomas', 'Lucien']
+// const data = ['Alexandre', 'Thomas', 'Lucien']
 
-    // const Wrapper = () => {
-    //   return (
-    // 	  <Cards onEnd={action('end')} className='master-root'>
-    //         {data.map(item =>
-    //           <Card
-    //             onSwipeLeft={action('swipe left')}
-    //             onSwipeRight={action('swipe right')}>
-    //             <h2>{item}</h2>
-    //           </Card>
-    //         )}
-    //       </Cards>
-    //   )
-    // }
-  );
-}
+// const Wrapper = () => {
+//   return (
+// 	  <Cards onEnd={action('end')} className='master-root'>
+//         {data.map(item =>
+//           <Card
+//             onSwipeLeft={action('swipe left')}
+//             onSwipeRight={action('swipe right')}>
+//             <h2>{item}</h2>
+//           </Card>
+//         )}
+//       </Cards>
+//   )
+// }
+//   );
+// }
 
-export default Discover;
+// export default Discover;
