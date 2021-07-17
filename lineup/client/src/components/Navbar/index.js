@@ -59,11 +59,9 @@ function Navbar() {
             </Link>
           </Nav>
           <NavDropdown title="More" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#Signup">Sign Up</NavDropdown.Item>
-            <NavDropdown.Item href="#action/2">action 2</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3">action 3</NavDropdown.Item>
+            <NavDropdown.Item href="#Create">Create LINEUP</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/4">action 4</NavDropdown.Item>
+            <NavDropdown.Item href="#Signup">Sign Up</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </RbNavBar.Collapse>
