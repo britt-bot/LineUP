@@ -58,15 +58,18 @@ function Navbar() {
               Discover
             </Link>
           </Nav>
-          <NavDropdown
+          {/* <NavDropdown
             title="More"
             align="end"
-            id="collasible-nav-dropdown dropdown-menu-offet">
-            <NavDropdown.Item href="#Create">Create LINEUP</NavDropdown.Item>
+            id="collasible-nav-dropdown dropdown-menu-offet"
+          >
+            <NavDropdown.Item></NavDropdown.Item>
+            <NavDropdown.Item href="#action/2">action 2</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3">action 3</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#Signup">Sign Up</NavDropdown.Item>
-          </NavDropdown>
-          </Nav>
+            <NavDropdown.Item href="#action/4">action 4</NavDropdown.Item>
+          </NavDropdown> */}
+        </Nav>
       </RbNavBar.Collapse>
     </RbNavBar>
   );
