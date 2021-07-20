@@ -73,9 +73,9 @@ function Navbar() {
             align="end"
             id="collasible-nav-dropdown dropdown-menu-offet"
           >
-            <NavDropdown.Item href="#Create">Create LINEUP</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#Signup">Sign Up</NavDropdown.Item>
+            {/* <NavDropdown.Item href="/create">Create LINEUP</NavDropdown.Item>
+            <NavDropdown.Divider /> */}
+            <NavDropdown.Item href="/signup">Sign Up</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </RbNavBar.Collapse>
