@@ -3,6 +3,8 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  border-color: rgba(0, 255, 128, 0.603);
+  border-top-style: dashed;
 }
 
 .hero::after {
@@ -22,16 +24,12 @@
   z-index: 2;
 }
 
-.hero h1, .hero h2, .hero p {
+.hero h1, .hero h2, .hero h4 {
   color: white;
 }
 
 .hero h1 {
   font-size: 60px;
-  padding-top: 140px;
+  padding-top: 150px;
   margin-top: 0;
-}
-
-.hero p {
-  text-align: center;
 }
