@@ -1,11 +1,5 @@
 import React from "react";
-// import { Container, Alert } from 'react-bootstrap';
-// import API from "../utils/API";
-// import axios from "axios";
-// import SearchForm from "../components/SearchForm";
-// import SearchResults from "../components/SearchResults";
-// import "./index.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col } from "react-bootstrap";
 import SearchResultsCard from "../components/SearchResultsCard";
 
 function Search(props) {
@@ -13,62 +7,17 @@ function Search(props) {
   const filteredFestivals = festivals.filter(
     (v, i, a) => a.findIndex((t) => t.name === v.name) === i
   );
-  return filteredFestivals.map((festival) => {
-    return <SearchResultsCard key={festival.name} festival={festival} />;
-  });
+  return (
+    <Container>
+      <Row>
+        {filteredFestivals.map((festival) => (
+          <Col lg={4} md={4} style={{ marginBottom: 25 }}>
+            <SearchResultsCard key={festival.name} festival={festival} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  );
 }
-
-// class Search extends Component {
-//   state = {
-//     search: "",
-//     breeds: [],
-//     results: [],
-//     error: ""
-//   };
-
-//   // When the component mounts, get a list of all available base breeds and update this.state.breeds
-//   componentDidMount() {
-//     API.getBaseBreedsList()
-//       .then(res => this.setState({ breeds: res.data.message }))
-//       .catch(err => console.log(err));
-//   }
-
-//   handleInputChange = event => {
-//     this.setState({ search: event.target.value });
-//   };
-
-//   handleFormSubmit = event => {
-//     event.preventDefault();
-//     API.getDogsOfBreed(this.state.search)
-//       .then(res => {
-//         if (res.data.status === "error") {
-//           throw new Error(res.data.message);
-//         }
-//         this.setState({ results: res.data.message, error: "" });
-//       })
-//       .catch(err => this.setState({ error: err.message }));
-//   };
-//   render() {
-//     return (
-//       <div>
-//         <Container style={{ minHeight: "80%" }}>
-//           <h1 className="text-center">Search By Breed!</h1>
-//           <Alert
-//             type="danger"
-//             style={{ opacity: this.state.error ? 1 : 0, marginBottom: 10 }}
-//           >
-//             {this.state.error}
-//           </Alert>
-//           <SearchForm
-//             handleFormSubmit={this.handleFormSubmit}
-//             handleInputChange={this.handleInputChange}
-//             breeds={this.state.breeds}
-//           />
-//           <SearchResults results={this.state.results} />
-//         </Container>
-//       </div>
-//     );
-//   }
-// }
 
 export default Search;
