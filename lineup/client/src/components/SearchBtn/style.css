@@ -5,10 +5,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 ion-icon {
   padding-top: 2px;
   font-size: 24px;
     --ionicon-stroke-width: 24px;
+  color: #939d9e;
+}
+
+.searchclick.btn.btn-outline-light {
+  border-color: #939d9e;
 }
 
 @media (min-width: 350px) {

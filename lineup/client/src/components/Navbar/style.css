@@ -14,7 +14,7 @@ nav.navbar.navbar-default {
 
 .dropdown-menu .show{
   background-color: blue;
-margin-right: 20px;
+  margin-right: 20px;
 }
 
 @media (min-width: 992px){
