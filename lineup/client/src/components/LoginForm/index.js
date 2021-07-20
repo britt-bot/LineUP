@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
+import "./style.css";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -14,10 +15,10 @@ function LoginForm() {
   }
 
   return (
-    <div className="Login">
+    <div className="text-center Login">
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
-          <Form.Label>Email</Form.Label>
+          <Form.Label>Email Address</Form.Label>
           <Form.Control
             autoFocus
             type="email"

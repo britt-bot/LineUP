@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import API from "../../utils/API";
 import { Button, Form } from "react-bootstrap";
-import "../../components/SignupForm/style.css";
+import "./style.css";
 // import axios from "axios";
 // import { request } from "express";
 
@@ -29,12 +29,12 @@ function SignupForm() {
   }
 
   return (
-    <div className="SignUp">
+    <div className="text-center SignUp">
       <Form onSubmit={handleSubmit}>
-        <Form.Label>Sign Up</Form.Label>
+        <Form.Label><h3>Sign Up for LINEUP!</h3></Form.Label>
 
         <Form.Group size="lg" controlId="firstName">
-          <Form.Label>First name</Form.Label>
+          <Form.Label>First Name</Form.Label>
           <Form.Control
             autoFocus
             type="firstName"
@@ -44,7 +44,7 @@ function SignupForm() {
         </Form.Group>
 
         <Form.Group size="lg" controlId="lastName">
-          <Form.Label>Last name</Form.Label>
+          <Form.Label>Last Name</Form.Label>
           <Form.Control
             autoFocus
             type="lastName"
@@ -54,7 +54,7 @@ function SignupForm() {
         </Form.Group>
 
         <Form.Group size="lg" controlId="email">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Email Address</Form.Label>
           <Form.Control
             autoFocus
             type="email"
