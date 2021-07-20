@@ -7,7 +7,7 @@
   border-top-style: dashed;
 }
 
-.hero::after {
+/* .hero::after {
   content: "";
   display: block;
   opacity: .4;
@@ -17,7 +17,7 @@
   left: 0;
   right: 0;
   background: black;
-}
+} */
 
 .hero * {
   position: relative;
