@@ -1,7 +1,26 @@
 .footer {
-  min-height: 100px;
+  min-height: 50px;
   background: #212529;
   position: relative;
+  color:#939d9e;
+  border-color: rgba(0, 255, 128, 0.603);
+  border-top-style: dashed;
+}
+
+.footer a {
+  color:turquoise;
+}
+
+.footer a:hover {
+  color: #939d9e;
+}
+
+.footer h3 {
+  color: #ff3399;
+}
+
+.footer h6 {
+  color: blueviolet;
 }
 
 .footer span {
@@ -10,5 +29,8 @@
   left: 0;
   right: 0;
   padding: 3px;
-  background: #B8B8B8;
+  background: #212529;
+  color: #939d9e;
+  font-size: small;
 }
+

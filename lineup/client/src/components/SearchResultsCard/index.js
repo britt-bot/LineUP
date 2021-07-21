@@ -9,11 +9,12 @@ function SearchResultsCard(props) {
   const {
     festival: { name, summary, logo, status, date, start, venues, ticket },
   } = props;
+  console.log(props);
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card className="cardGroup" style={props.style}>
       <Card.Img variant="top" src={logo} />
       <Card.Body>
-        <Card.Title>{name}</Card.Title>
+        <Card.Title className="cardTitle">{name}</Card.Title>
         <Card.Text>{summary}</Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
