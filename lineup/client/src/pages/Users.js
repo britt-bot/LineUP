@@ -9,27 +9,21 @@ import API from "../utils/API";
 
 function Users() {
   // Setting our component's initial state
-  const [users, setUsers] = useState([])
+  const [users, setUsers] = useState([]);
 
   // Load all books and store them with setBooks
   useEffect(() => {
-    loadUsers()
-  }, [])
+    loadUsers();
+  }, []);
 
   // Loads all books and sets them to books
   function loadUsers() {
     API.getUsers()
-      .then(res => 
-        setUsers(res.data[0])
-      )
-      .catch(err => console.log(err));
-  };
+      .then((res) => setUsers(res.data[0]))
+      .catch((err) => console.log(err));
+  }
 
-  return (
-      <div>
-          {/* <h5> Hello There! {users.userName} </h5> */}
-      </div>
-  )
+  return <div>{/* <h5> Hello There! {users.userName} </h5> */}</div>;
 }
 
 export default Users;

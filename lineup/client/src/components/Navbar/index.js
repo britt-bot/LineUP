@@ -4,7 +4,7 @@ import "./style.css";
 import Logo from "../images/logo4.png";
 import RbNavBar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 import SearchBtn from "../SearchBtn";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
@@ -44,7 +44,7 @@ function Navbar() {
                 : "nav-link"
             }
           >
-            Login
+            Login/ Sign Up
           </Link>
           <Nav>
             <Link
@@ -68,15 +68,15 @@ function Navbar() {
               Profile
             </Link>
           </Nav>
-          <NavDropdown
+          {/* <NavDropdown
             title="More"
             align="end"
             id="collasible-nav-dropdown dropdown-menu-offet"
-          >
-            {/* <NavDropdown.Item href="/create">Create LINEUP</NavDropdown.Item>
+          > */}
+          {/* <NavDropdown.Item href="/create">Create LINEUP</NavDropdown.Item>
             <NavDropdown.Divider /> */}
-            <NavDropdown.Item href="/signup">Sign Up</NavDropdown.Item>
-          </NavDropdown>
+          {/* <NavDropdown.Item href="/signup">Sign Up</NavDropdown.Item>
+          </NavDropdown> */}
         </Nav>
       </RbNavBar.Collapse>
     </RbNavBar>
