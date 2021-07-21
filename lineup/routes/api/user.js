@@ -8,6 +8,9 @@ router.route("/")
 router.route("/add")
   .post(userController.create);
 
+router.route("/login")
+    .post(userController.login);
+
 // Matches with "/api/books/:id"
 // router
 //   .route("/:id")

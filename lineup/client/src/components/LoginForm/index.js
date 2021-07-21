@@ -1,17 +1,26 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
+import API from "../../utils/API";
 import "./style.css";
 
 function LoginForm() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
   function validation() {
     return email.length > 0 && password.length > 6;
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
+    function handleSubmit(e) {
+        const loginUser = {
+            "email": email,
+            "password": password
+        }
+        console.log(loginUser)
+        e.preventDefault();
+        API.loginForm(loginUser)
+            .then(res => console.log(res.data))
+            .catch(err => console.log(err));            
   }
 
   return (
