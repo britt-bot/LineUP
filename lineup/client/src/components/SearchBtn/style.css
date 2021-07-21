@@ -1,7 +1,7 @@
 .searchForm.searchForm{
   background-color: transparent;
   border-style: none;
-  color: white;
+  /* color: white; */
 }
 
 .searchbtn.form-inline.searchbtn.form-inline{
@@ -27,8 +27,18 @@ ion-icon {
   color: #939d9e;
 }
 
+.searchclick.btn.btn:hover ion-icon {
+  color: #212529 !important;
+}
+
 .searchclick.btn.btn-outline-light {
   border-color: transparent;
+}
+
+.searchclick.btn.btn:hover{
+  color:  #212529 !important;
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FF3399 80%, #00C0FF 100%);
+  animation:slidebg 5s linear infinite;
 }
 
 @media (min-width: 350px) {
