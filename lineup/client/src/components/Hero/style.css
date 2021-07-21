@@ -2,12 +2,13 @@
   height: 500px;
   background-size: cover;
   background-position: center;
+  background-blend-mode: darken;
   position: relative;
-  border-color: rgba(0, 255, 128, 0.603);
+  border-color: rgba(0, 255, 0, 0.767);
   border-top-style: dashed;
 }
 
-.hero::after {
+/* .hero::after {
   content: "";
   display: block;
   opacity: .4;
@@ -17,20 +18,26 @@
   left: 0;
   right: 0;
   background: black;
-}
+} */
 
 .hero * {
   position: relative;
   z-index: 2;
 }
 
-.hero h1, .hero h2, .hero h4 {
-  color: white;
-}
-
 .hero h1 {
+  color: white;
   font-size: 60px;
   padding-top: 150px;
   margin-top: 0;
 }
 
+.hero h2 {
+  color: white;
+  font-size: 30px;
+}
+
+.hero h4 {
+  color: white;
+  font-size: 30px;
+}

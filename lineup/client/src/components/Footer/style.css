@@ -3,7 +3,7 @@
   background: #212529;
   position: relative;
   color:#939d9e;
-  border-color: rgba(0, 255, 128, 0.603);
+  border-color: rgba(0, 255, 0, 0.767);
   border-top-style: dashed;
 }
 
@@ -32,5 +32,9 @@
   background: #212529;
   color: #939d9e;
   font-size: small;
+}
+
+.social {
+  color: lime;
 }
 
