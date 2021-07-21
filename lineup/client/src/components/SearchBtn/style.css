@@ -1,9 +1,18 @@
-.searchbtn.form-inline {
+.searchForm.searchForm{
+  background-color: transparent;
+  border-style: none;
+}
+
+.searchbtn.form-inline.searchbtn.form-inline {
   display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-color:#939d9e;
+  border-style:solid;
+  border-width: thin;
+  border-radius: 10px;
 }
 
 ion-icon {
@@ -14,7 +23,7 @@ ion-icon {
 }
 
 .searchclick.btn.btn-outline-light {
-  border-color: #939d9e;
+  border-color: transparent;
 }
 
 @media (min-width: 350px) {
