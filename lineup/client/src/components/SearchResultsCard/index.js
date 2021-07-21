@@ -9,7 +9,6 @@ function SearchResultsCard(props) {
   const {
     festival: { name, summary, logo, status, date, start, venues, ticket },
   } = props;
-  console.log(props);
   return (
     <Card className="cardGroup" style={props.style}>
       <Card.Img variant="top" src={logo} />
