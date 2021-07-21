@@ -5,7 +5,7 @@ import "./style.css";
 
 function Footer() {
   let iconStyles = {color: "#FF6433" };
-  let iconStyles1 = { color: "#3366FF" };
+  let iconStyles1 = { color: "#33E8FF" };
   return (
     <footer className="footer">
       <div class="row my-2 justify-content-center py-3">
