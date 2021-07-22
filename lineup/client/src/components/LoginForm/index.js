@@ -12,13 +12,13 @@ function LoginForm() {
   }
 
     function handleSubmit(e) {
-        const loginUser = {
-            "email": email,
+        const login = {
+            "username": email,
             "password": password
         }
-        console.log(loginUser)
+        console.log(login)
         e.preventDefault();
-        API.loginForm(loginUser)
+        API.loginForm(login)
             .then(res => console.log(res.data))
             .catch(err => console.log(err));            
   }
