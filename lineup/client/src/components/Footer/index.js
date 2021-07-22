@@ -10,9 +10,9 @@ function Footer() {
   return (
     <footer className="footer">
       <div class="row my-2 justify-content-center py-2">
-         <div class="col-7">
+         <div class="col-8">
             <div class="row">
-              <div class="col-xl-8 col-md-4 col-sm-4 my-auto mx-auto a">
+              <div class="col-xl-6 col-md-4 col-sm-4 my-auto mx-auto a">
                 <h3 class="mb-md-0 mb-5 bold-text">LINEUP</h3>
                   <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
                     <p class="social mb-0 pb-0 bold-text"> 
@@ -126,7 +126,7 @@ function Footer() {
               </div>
           </div>
       </div>
-      <span class="col-xl-7 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+      <span class="col-xl-6 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
         Copyright ©LINEUP 2021 | All rights reserved.
       </span>
     </footer>
