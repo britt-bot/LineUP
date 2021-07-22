@@ -8,11 +8,16 @@
 }
 
 .footer a {
-  color:#33E8FF;
+  color:#939d9e;
 }
 
 .footer a:hover {
-  color: #939d9e;
+  color:  #212529 !important;
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FF3399 80%, #00C0FF 100%);
+  animation:slidebg 5s linear infinite;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 3px #939d9e;
+  opacity: 90%;
 }
 
 .footer h3 {
