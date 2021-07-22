@@ -1,13 +1,47 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+/*const passport = require('passport');*/
+const passportLocalMongoose = require("passport-local-mongoose")
 
-const userSchema = new Schema({
-  firstName: { type: String, required: true },
-  lastName: { type: String, required: true },
-  email: { type: String, required: true },
-  password: { type: String, required: true }
-});
+const Session = new Schema({
+    refreshToken: {
+        type: String,
+        default: "",
+    },
+})
 
-const User = mongoose.model("User", userSchema);
+const User = new Schema({
+    firstName: {
+        type: String,
+        default: "",
+    },
+    lastName: {
+        type: String,
+        default: "",
+    },
+    authStrategy: {
+        type: String,
+        default: "local",
+    },
+    points: {
+        type: Number,
+        default: 50,
+    },
+    refreshToken: {
+        type: [Session],
+    },
+})
 
-module.exports = User;
+/*const User = mongoose.model("User", userSchema);*/
+
+User.set("toJSON", {
+    transform: function (doc, ret, options) {
+        delete ret.refreshToken
+        return ret
+    },
+})
+
+User.plugin(passportLocalMongoose);
+User.plugin(passportLocalMongoose, { usernameField: 'email' })
+
+module.exports = mongoose.model("User", User);
