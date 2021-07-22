@@ -1,22 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 .footer {
   min-height: 50px;
   background: #212529;
   position: relative;
   color:#939d9e;
-  border-color: rgba(0, 255, 0, 0.767);
-  border-top-style: dashed;
+  border-color: #939d9e;
+  border-top-style: groove;
+  padding-bottom: 7px;
+  font-family: comfortaa;
 }
 
 .footer a {
-  color:#33E8FF;
+  color:#939d9e !important;
+  text-decoration: none;
 }
 
 .footer a:hover {
-  color: #939d9e;
+  color:  #212529 !important;
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FF3399 80%, #00C0FF 100%);
+  animation:slidebg 5s linear infinite;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
+  opacity: 100%;
+  padding: 2px;
 }
 
 .footer h3 {
-  color: #ff3399;
+  color: hsl(330, 100%, 60%);
+  font-weight: bold;
 }
 
 .footer h6 {
@@ -32,9 +44,5 @@
   background: #212529;
   color: #939d9e;
   font-size: small;
+  margin-left: 340px !important;
 }
-
-.social {
-  color: lime;
-}
-
