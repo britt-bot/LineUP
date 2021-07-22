@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 .searchForm.searchForm{
   background-color: transparent;
   border-style: none;
@@ -9,6 +11,7 @@
   border-style:solid;
   border-width: thin;
   border-radius: 10px;
+  font-family: comfortaa;
 }
 
 .searchbtn.form-inline {
@@ -41,6 +44,7 @@ ion-icon {
   box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
   border: 0;
   opacity: 90%;
+  border-radius: 15px;
 }
 
 @media (min-width: 350px) {

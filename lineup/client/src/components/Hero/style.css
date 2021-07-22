@@ -1,5 +1,5 @@
 .hero {
-  height: 500px;
+  height: 700px;
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
@@ -26,18 +26,10 @@
 }
 
 .hero h1 {
-  color: white;
-  font-size: 60px;
-  padding-top: 150px;
+  color: #939d9e;
   margin-top: 0;
 }
 
-.hero h2 {
-  color: white;
-  font-size: 30px;
-}
-
-.hero h4 {
-  color: white;
-  font-size: 30px;
+.hero h3 {
+  color: #939d9e;
 }

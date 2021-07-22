@@ -8,13 +8,15 @@ import "../App.css";
 function Homepage() {
   return (
     <div>
-      <Hero backgroundImage={BackgroundImage} style={{ opacity: 0.2 }}>
+      <Hero>
         <img className="logo1" alt="logo" src={Logo}></img>
-        <h2>Pick the best LINEUP!</h2>
-        <h4>
-          LINEUP is all about festivals, from all over the world, all of the
-          time.
-        </h4>
+        <div className="slogan">
+          <h1>Pick the best LINEUP!</h1>
+          <h3>
+            LINEUP is all about festivals, from all over the world, all of the
+            time.
+          </h3>
+        </div>
       </Hero>
       {/* <Container style={{ marginTop: 30 }}>
         <Row>
