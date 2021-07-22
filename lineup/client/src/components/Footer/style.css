@@ -3,8 +3,8 @@
   background: #212529;
   position: relative;
   color:#939d9e;
-  border-color: rgba(0, 255, 0, 0.767);
-  border-top-style: dashed;
+  border-color: #939d9e;
+  border-top-style: groove;
 }
 
 .footer a {
