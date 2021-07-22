@@ -1,11 +1,11 @@
 .hero {
-  height: 500px;
+  height: 700px;
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
   position: relative;
-  border-color: rgba(0, 255, 0, 0.767);
-  border-top-style: dashed;
+  border-color: #939d9e;
+  border-top-style: groove;
 }
 
 /* .hero::after {
@@ -26,18 +26,10 @@
 }
 
 .hero h1 {
-  color: white;
-  font-size: 60px;
-  padding-top: 150px;
+  color: #939d9e;
   margin-top: 0;
 }
 
-.hero h2 {
-  color: white;
-  font-size: 30px;
-}
-
-.hero h4 {
-  color: white;
-  font-size: 30px;
+.hero h3 {
+  color: #939d9e;
 }

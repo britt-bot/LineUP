@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 .searchForm.searchForm{
   background-color: transparent;
   border-style: none;
-  color: white;
+  /* color: white; */
 }
 
 .searchbtn.form-inline.searchbtn.form-inline{
   border-color:#939d9e;
   border-style:solid;
   border-width: thin;
-  border-radius: 10px
+  border-radius: 10px;
+  font-family: comfortaa;
 }
 
 .searchbtn.form-inline {
@@ -17,7 +20,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  ;
 }
 
 ion-icon {
@@ -27,8 +29,22 @@ ion-icon {
   color: #939d9e;
 }
 
-.searchclick.btn.btn-outline-light {
-  border-color: transparent;
+.searchclick.btn.btn:hover ion-icon {
+  color: #212529 !important;
+}
+
+.searchclick.btn.btn-outline {
+  margin: 2px;
+}
+
+.searchclick.btn.btn:hover{
+  color: #212529 !important;
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FF3399 80%, #00C0FF 100%);
+  animation:slidebg 10s linear infinite;
+  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
+  border: 0;
+  opacity: 90%;
+  border-radius: 15px;
 }
 
 @media (min-width: 350px) {
