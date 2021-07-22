@@ -5,10 +5,12 @@
   color:#939d9e;
   border-color: #939d9e;
   border-top-style: groove;
+  padding-bottom: 7px;
 }
 
 .footer a {
-  color:#939d9e;
+  color:#939d9e !important;
+  text-decoration: none;
 }
 
 .footer a:hover {
@@ -16,8 +18,9 @@
   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FF3399 80%, #00C0FF 100%);
   animation:slidebg 5s linear infinite;
   border-radius: 5px;
-  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 3px #939d9e;
-  opacity: 90%;
+  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
+  opacity: 100%;
+  padding: 2px;
 }
 
 .footer h3 {
@@ -38,8 +41,3 @@
   color: #939d9e;
   font-size: small;
 }
-
-.social {
-  color: lime;
-}
-

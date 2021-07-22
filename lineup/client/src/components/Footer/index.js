@@ -1,41 +1,126 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaEnvelope, FaArrowRight, FaFacebook, FaLinkedin, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 import { SiHeroku } from "react-icons/si";
 import "./style.css";
 
 function Footer() {
   let iconStyles = {color: "#FF6433" };
-  let iconStyles1 = { color: "#33E8FF" };
+  let iconStyles1 = { color: "lime" };
   return (
     <footer className="footer">
-      <div class="row my-2 justify-content-center py-3">
+      <div class="row my-2 justify-content-center py-2">
          <div class="col-7">
             <div class="row">
-              <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+              <div class="col-xl-8 col-md-4 col-sm-4 my-auto mx-auto a">
                 <h3 class="mb-md-0 mb-5 bold-text">LINEUP</h3>
                   <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
                     <p class="social mb-0 pb-0 bold-text"> 
-                      <FaFacebook /> 
-                      <FaLinkedin />
-                      <FaTwitter />
-                      <FaInstagram /> </p>
+                      <a href=
+                        "https://www.facebook.com/pickthebestLINEUP"
+                        className={
+                          window.location.pathname === "/"
+                        }
+                      >
+                        <FaFacebook /> 
+                      </a>
+                      <a href=
+                        "https://www.linkedin.com/company/pickthebest-lineup"
+                        className={
+                          window.location.pathname === "/"
+                        }
+                      >
+                        <FaLinkedin /> 
+                      </a>                      
+                      <a href=
+                        "https://twitter.com/bestLINEUPapp"
+                        className={
+                          window.location.pathname === "/"
+                        }
+                      >
+                        <FaTwitter />
+                      </a>
+                      <a href=
+                        "https://www.instagram.com/pickthebestlineup"
+                        className={
+                          window.location.pathname === "/"
+                        }
+                      >
+                        <FaInstagram /> 
+                      </a>
+                    </p>
                   </div>
                 </div>
-                <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                <div class="col-xl-2 col-md-4 col-sm-4 menu">
                     <h6 class="mb-3 mb-lg-1 bold-text mt-sm-0 mt-5"><b>MENU</b></h6>
                       <ul class="list-unstyled">
-                        <li><FaArrowRight style={iconStyles} />   Home</li>
-                        <li><FaArrowRight style={iconStyles} />   Login/Signup</li>
-                        <li><FaArrowRight style={iconStyles} />   Profile</li>
-                        <li><FaArrowRight style={iconStyles} />   Discover</li>
+                        <li><FaArrowRight style={iconStyles} /> <Link
+                          to="/"
+                          className={
+                            window.location.pathname === "/"
+                          }
+                        >
+                        Home
+                        </Link></li>
+                        <li><FaArrowRight style={iconStyles} /> <Link
+                          to="/login"
+                          className={
+                            window.location.pathname === "/login"
+                          }
+                        >
+                        Login/Sign Up
+                        </Link></li>
+                        <li><FaArrowRight style={iconStyles} />  <Link
+                          to="/profile"
+                          className={
+                            window.location.pathname === "/profile"
+                          }
+                        >
+                        Profile
+                        </Link></li>
+                        <li><FaArrowRight style={iconStyles} />  <Link
+                          to="/discover"
+                          className={
+                            window.location.pathname === "/discover"
+                          }
+                        >
+                        Discover
+                        </Link></li>
                       </ul>
                   </div>
-                  <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                  <div class="col-xl-2 col-md-4 col-sm-4 contact">
                     <h6 class="mb-3 mb-lg-1 bold-text mt-sm-0 mt-5 text-warning"><b>CONTACT</b></h6>
                       <ul class="list-unstyled">
-                        <li><FaEnvelope style={iconStyles1} />  Email</li>
-                        <li><FaGithub style={iconStyles1} />  GitHub</li>
-                        <li><SiHeroku style={iconStyles1} />  Heroku</li>
+                        <li><FaEnvelope style={iconStyles1} />  <a href=
+                          "mailto:pickthebest.LINEUP@gmail.com" 
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={
+                            window.location.pathname === "/"
+                          }
+                        >
+                        Email
+                        </a></li>
+                        <li><FaGithub style={iconStyles1} />  <a href=
+                          "https://github.com/britt-bot/Group_Project3/tree/main/lineup" 
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={
+                            window.location.pathname === "/"
+                          }
+                        >
+                        GitHub
+                        </a></li>
+                        <li><SiHeroku style={iconStyles1} />  <a href=
+                          "https://lineup-festival.herokuapp.com/" 
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={
+                            window.location.pathname === "/"
+                          }
+                        >
+                        Heroku
+                        </a></li>
                       </ul>
                   </div>
               </div>
