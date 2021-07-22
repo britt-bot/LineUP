@@ -16,7 +16,7 @@ function Searchbtn() {
       const url = `https://app.ticketmaster.com/discovery/v2/events?apikey=${process.env.REACT_APP_EVENT_API_KEY}&keyword=`;
 
       const response = await axios.get(
-        url + search + "&locale=en-us&countryCode=US&segmentName=music&page=1"
+        url + search + "&locale=en-us&countryCode=US&segmentName=music"
       );
       let searchResult = response.data._embedded.events;
 
