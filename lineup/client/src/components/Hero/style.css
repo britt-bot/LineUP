@@ -4,8 +4,8 @@
   background-position: center;
   background-blend-mode: darken;
   position: relative;
-  border-color: rgba(0, 255, 0, 0.767);
-  border-top-style: dashed;
+  border-color: #939d9e;
+  border-top-style: groove;
 }
 
 /* .hero::after {
