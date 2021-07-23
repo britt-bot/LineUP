@@ -12,6 +12,7 @@ const { getToken, COOKIE_OPTIONS, getRefreshToken, verifyUser } = require("../..
 router.post("/add", (req, res, next) => {
     // Verify that first name is not empty
     console.log("Add");
+    console.log(req.body.email);
 /*    console.log(req);*/
     if (!req.body.firstName) {
         res.statusCode = 500
