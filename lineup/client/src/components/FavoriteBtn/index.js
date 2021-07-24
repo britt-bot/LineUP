@@ -4,7 +4,9 @@ import { Button } from "react-bootstrap";
 function FavoriteBtn() {
   const [isFavorite, setIsFavorite] = useState(false);
 
-  const handleClick = () => setIsFavorite(!isFavorite);
+  const handleClick = () => {
+    setIsFavorite(!isFavorite);
+  };
 
   return (
     <Button
@@ -13,7 +15,10 @@ function FavoriteBtn() {
       variant="outline-transparent"
       onClick={handleClick}
     >
-      <ion-icon name="star-outline"></ion-icon>
+      <ion-icon
+        style={{ color: isFavorite ? "gold" : "black" }}
+        name={isFavorite ? "star" : "star-outline"}
+      ></ion-icon>
     </Button>
   );
 }

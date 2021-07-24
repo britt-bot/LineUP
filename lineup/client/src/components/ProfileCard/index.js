@@ -6,7 +6,7 @@ function ProfileCard(props) {
   return (
     <div className="card-container">
       <header>
-        <img src={avatar} alt={props.name} />
+        <img className="avatarImg" src={avatar} alt={props.name} />
       </header>
       <h1 className="bold-text">
         {props.name} <span className="normal-text">My Age</span>
