@@ -16,10 +16,8 @@ function LoginForm() {
             "username": email,
             "password": password
         }
-        console.log(login)
-        e.preventDefault();
         API.loginForm(login)
-            .then(res => console.log(res.data))
+            .then(res => console.log(res))
             .catch(err => console.log(err));            
   }
 

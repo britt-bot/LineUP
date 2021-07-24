@@ -28,14 +28,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(passport.initialize());
 app.use(passport.session());
-//app.use(
-//    session({
-//        //secret: process.env.SECRET,
-//        secret: "Deez",
-//        resave: false,
-//        saveUninitialized: true,
-//    })
-//);
 
 const whitelist = process.env.WHITELISTED_DOMAINS
     ? process.env.WHITELISTED_DOMAINS.split(",")

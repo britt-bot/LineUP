@@ -21,8 +21,6 @@ function SignupForm() {
     "lastName" : lastName, 
     "email" : email, 
     "password" : password}
-    console.log(newUser)
-     e.preventDefault();
     API.createUser(newUser)
       .then(res => console.log(res.data))
       .catch(err => console.log(err));
