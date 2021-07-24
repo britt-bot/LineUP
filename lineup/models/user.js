@@ -41,7 +41,6 @@ User.set("toJSON", {
     },
 })
 
-User.plugin(passportLocalMongoose);
 User.plugin(passportLocalMongoose, { usernameField: 'email' })
 
 module.exports = mongoose.model("User", User);
