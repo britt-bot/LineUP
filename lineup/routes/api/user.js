@@ -75,6 +75,28 @@ router.post("/login", passport.authenticate("local"), (req, res, next) => {
     );
 });
 
+router.post("/favorite", passport.authenticate("local"), (req, res, next) => {
+    console.log("favorite");
+    console.log(req);
+    User.findById(req.user._id).then(
+        (user) => {
+            console.log(user.favorites)
+            user.favorites.push (favorite)
+            user.save((err, user) => {
+                if (err) {
+                    console.log("Save error")
+                    res.statusCode = 500;
+                    res.send(err);
+                } else {
+                    console.log(res);
+                    res.send({ success: true });
+                }
+            });
+        },
+        (err) => next(err)
+    );
+});
+
 router.post("/refreshToken", (req, res, next) => {
     const { signedCookies = {} } = req;
     const { refreshToken } = signedCookies;
