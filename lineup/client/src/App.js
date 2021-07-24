@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import { UserProvider } from "./context/UserContext"
+import { UserProvider } from "./context/UserContext";
 
 function App() {
   return (
@@ -21,10 +21,10 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/discover" component={Discover} />
-                  <Route exact path="/search" component={Search} />
-            <UserProvider>
-                <Route exact path="/profile" component={Profile} />
-            </UserProvider>
+          <Route exact path="/search" component={Search} />
+          <UserProvider>
+            <Route exact path="/profile" component={Profile} />
+          </UserProvider>
           <Route exact path="/signup" component={Signup} />
         </Wrapper>
         <Footer />

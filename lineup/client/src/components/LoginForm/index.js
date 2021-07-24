@@ -4,21 +4,23 @@ import API from "../../utils/API";
 import "./style.css";
 
 function LoginForm() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   function validation() {
     return email.length > 0 && password.length > 6;
   }
 
-    function handleSubmit(e) {
-        const login = {
-            "username": email,
-            "password": password
-        }
-        API.loginForm(login)
-            .then(res => console.log(res))
-            .catch(err => console.log(err));            
+  function handleSubmit(e) {
+    const login = {
+      username: email,
+      password: password,
+    };
+    console.log(login);
+    e.preventDefault();
+    API.loginForm(login)
+      .then((res) => console.log(res.data))
+      .catch((err) => console.log(err));
   }
 
   return (
@@ -44,9 +46,6 @@ function LoginForm() {
         <Button block size="lg" type="submit" disabled={!validation()}>
           Login
         </Button>
-        <p className="forgot-password text-right">
-          Sign up <a href="/signup">here</a>!
-        </p>
       </Form>
     </div>
   );
