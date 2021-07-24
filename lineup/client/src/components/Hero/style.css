@@ -1,5 +1,5 @@
 .hero {
-  height: 700px;
+  height: 750px;
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
@@ -30,6 +30,16 @@
   margin-top: 0;
 }
 
-.hero h3 {
+.hero h2 {
   color: #939d9e;
+}
+
+@media (min-width: 992px){
+  .navbar-expand-lg.navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .navbar-expand-lg.navbar-expand-lg .navbar-collapse{
+    max-width: fit-content;
+  }
 }
