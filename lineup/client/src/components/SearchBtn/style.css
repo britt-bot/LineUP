@@ -54,7 +54,7 @@ ion-icon {
   .searchbtn.form-inline{
     display: flex;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-40%, -40%)
 }
