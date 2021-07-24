@@ -10,10 +10,10 @@ function Homepage() {
         <img className="logo1" alt="logo" src={Logo}></img>
         <div className="slogan">
           <h1>Pick the best LINEUP!</h1>
-          <h3>
+          <h2>
             LINEUP is all about festivals, from all over the world, all of the
             time.
-          </h3>
+          </h2>
         </div>
       </Hero>
       {/* <Container style={{ marginTop: 30 }}>

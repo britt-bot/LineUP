@@ -44,7 +44,7 @@ function Navbar() {
                 : "nav-link"
             }
           >
-            Login/ Sign Up
+            Login/Sign Up
           </Link>
           <Nav>
             <Link

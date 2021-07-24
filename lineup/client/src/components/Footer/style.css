@@ -46,3 +46,13 @@
   font-size: small;
   margin-left: 340px !important;
 }
+
+@media (min-width: 992px){
+  .navbar-expand-lg.navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .navbar-expand-lg.navbar-expand-lg .navbar-collapse{
+    max-width: fit-content;
+  }
+}
