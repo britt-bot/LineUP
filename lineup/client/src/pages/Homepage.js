@@ -1,7 +1,5 @@
 import React from "react";
-// import { Container, Col, Row } from "react-bootstrap";
 import Hero from "../components/Hero";
-import BackgroundImage from "../components/images/rainbowconfetti.jpg";
 import Logo from "../components/images/logo4.png";
 import "../App.css";
 
