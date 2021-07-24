@@ -47,10 +47,9 @@ ion-icon {
   border-radius: 15px;
 }
 
-@media (min-width: 350px) {
-  /* ion-icon{
-    font-size: 12px;
-  } */
+
+
+@media (min-width: 990px) {
   .searchbtn.form-inline{
     display: flex;
   position: absolute;
