@@ -17,21 +17,24 @@ function SignupForm() {
 
   function handleSubmit(e) {
     const newUser = {
-    "firstName" : firstName, 
-    "lastName" : lastName, 
-    "email" : email, 
-    "password" : password}
-    console.log(newUser)
-     e.preventDefault();
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      password: password,
+    };
+    console.log(newUser);
+    e.preventDefault();
     API.createUser(newUser)
-      .then(res => console.log(res.data))
-      .catch(err => console.log(err));
+      .then((res) => console.log(res.data))
+      .catch((err) => console.log(err));
   }
 
   return (
     <div className="text-center SignUp">
       <Form onSubmit={handleSubmit}>
-        <Form.Label><h3>Sign Up for LINEUP!</h3></Form.Label>
+        <Form.Label>
+          <h3>Sign Up for LINEUP!</h3>
+        </Form.Label>
 
         <Form.Group size="lg" controlId="firstName">
           <Form.Label>First Name</Form.Label>
@@ -80,9 +83,6 @@ function SignupForm() {
         >
           Sign Up
         </Button>
-        <p className="forgot-password text-right">
-          Already registered? <a href="/login">Sign in</a>!
-        </p>
       </Form>
     </div>
   );

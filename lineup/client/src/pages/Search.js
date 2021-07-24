@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SearchResultsCard from "../components/SearchResultsCard";
-import Pages from "../components/Pagination";
+// import Pages from "../components/Pagination";
 
 function Search(props) {
   const festivals = props.location.state.festivals;
@@ -17,7 +17,7 @@ function Search(props) {
           </Col>
         ))}
       </Row>
-      <Pages items={filteredFestivals} />
+      {/* <Pages items={filteredFestivals} /> */}
     </Container>
   );
 }

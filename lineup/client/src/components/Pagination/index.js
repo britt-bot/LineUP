@@ -5,7 +5,7 @@ const Pages = (props) => {
   const { items } = props;
   let currentPage = 0;
   let cardsPerPage = 6;
-  console.log(items);
+  // console.log(items);
 
   const itemsComponent = items.map((item, i) => {
     return (
