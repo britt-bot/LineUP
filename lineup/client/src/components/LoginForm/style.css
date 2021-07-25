@@ -13,23 +13,19 @@
   background-color:  #212529 !important;
 }
 
-::selection {
-  border-color: none;
-}
-
 .form-control {
-  border-color:#939d9e;
+  border-color:#939d9e !important;
   border-style: solid;
-  border-width: 1.75px;
-  border-radius: 15px;
+  border-width: 1.75px !important;
+  border-radius: 10px !important;
   font-family: comfortaa;
   background-color: #212529 !important;
+  color: #939d9e !important;
 }
 
 .form-control:focus {
- box-shadow: none;
- border-color: lime;
- outline: none !important;
+  box-shadow: none !important;
+  border-color: #939d9e !important;
 }
 
 .btn-group-md>.btn, .btn-md {
@@ -37,18 +33,18 @@
   text-decoration: none;
   background-color: #212529 !important;
   border-radius: 15px !important;
-  padding: 2px !important;
+  padding: 6px !important;
   border: none !important;
 }
 
 .btn-group-md>.btn, .btn-md:hover {
-  color:  #212529 !important;
+  color: #212529 !important;
   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FF3399 80%, #00C0FF 100%);
   animation:slidebg 5s linear infinite;
   border-radius: 15px;
-  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
+  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e !important;
   opacity: 90%;
-  padding: 2px;
+  padding: 6px !important;
   text-decoration: none;
 }
 
@@ -58,21 +54,52 @@
   font-family: comfortaa;  
 }
 
+.bp3-tab-indicator-wrapper {
+  width: 0 !important;
+}
+
 .bp3-tab {
   color:#939d9e !important;
   text-decoration: none;
   font-family: comfortaa;  
+  font-size: 16px !important;
+}
+
+.bp3-tab[aria-selected="true"] {
+  border-radius: 15px !important;
+  text-decoration: none !important;
+  
+}
+
+.bp3-tab[aria-selected="true"]:focus {
+  border-radius: 15px !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.bp3-tab[aria-selected="true"]:hover {
+  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e !important;
+}
+
+.bp3-tab[aria-selected="false"]:hover {
+  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e !important;
+}
+
+.bp3-tab:active {
+  text-decoration: none !important;
+  font-family: comfortaa;  
 }
 
 .bp3-tab:hover {
-  color:  #212529 !important;
+  color: #212529 !important;
   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FF3399 80%, #00C0FF 100%);
-  animation:slidebg 5s linear infinite;
-  border-radius: 15px;
-  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
-  opacity: 90%;
-  padding: 2px;
-  text-decoration: none;
+  animation: slidebg 5s linear infinite;
+  border-radius: 15px !important;
+  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e !important;
+  opacity: 80% !important;
+  padding: 3px !important;
+  text-decoration: none !important;
   font-family: comfortaa;  
 }
 
@@ -84,6 +111,9 @@
   .Login form {
     margin: 0 auto;
     max-width: 320px;
-    font-family: comfortaa;
+  }
+  
+  .row>* {
+    padding-right: inherit !important;
   }
 }

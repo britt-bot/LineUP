@@ -65,7 +65,7 @@ function Navbar() {
                   : "nav-link"
               }
             >
-              Profile
+              Faves
             </Link>
           </Nav>
           {/* <NavDropdown
