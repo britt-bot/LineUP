@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { SiHeroku } from "react-icons/si";
 import "./style.css";
+import { Button } from "react-bootstrap";
 
 function Footer() {
   let iconStyles = { color: "#FF6433" };
@@ -88,6 +89,16 @@ function Footer() {
                   >
                     Discover
                   </Link>
+                </li>
+                <li>
+                  <FaArrowRight style={iconStyles} />{" "}
+                  <Button
+                    variant="link"
+                    // onClick={handleLogout}
+                    className="logoutBtn"
+                  >
+                    Logout
+                  </Button>
                 </li>
               </ul>
             </div>
