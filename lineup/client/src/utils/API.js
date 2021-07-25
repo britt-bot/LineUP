@@ -14,9 +14,9 @@ export default {
     console.log(data);
     return axios.post("/api/user/login", data);
   },
-  favoriteSave: function (data) {
+  favoriteSave: function (props) {
     console.log("axios.favorite");
-    console.log(data);
-    return axios.post("/api/user/favorite", data);
+    console.log(props);
+    return axios.post("/api/user/favorite", props);
   },
 };

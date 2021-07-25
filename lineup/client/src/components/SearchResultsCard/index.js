@@ -7,8 +7,9 @@ import FavoriteBtn from "../FavoriteBtn";
 function SearchResultsCard(props) {
   // console.log(props);
   const {
-    festival: { name, summary, logo, status, date, start, venues, ticket },
+    festival: { name, summary, logo, status, date, start, venues, ticket, id},
   } = props;
+
   return (
     <Card className="cardGroup" style={props.style}>
       <Card.Img variant="top" src={logo} />
@@ -26,7 +27,7 @@ function SearchResultsCard(props) {
         <Card.Link href={ticket} target="_blank">
           Buy Tickets
         </Card.Link>
-        <FavoriteBtn />
+        <FavoriteBtn id={id}/>
       </Card.Body>
     </Card>
   );
