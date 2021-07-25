@@ -23,7 +23,10 @@
   border-radius: 15px;
   box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
   opacity: 100%;
-  padding: 2px;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
   text-decoration: none;
 }
 
@@ -48,12 +51,17 @@
   margin-left: 340px !important;
 }
 
+
 @media (min-width: 992px){
-  .navbar-expand-lg.navbar-expand-lg {
+  .footer {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-  .navbar-expand-lg.navbar-expand-lg .navbar-collapse{
+  .footer span{
     max-width: fit-content;
+  }
+
+  .row {
+    padding-right: inherit !important;
   }
 }
