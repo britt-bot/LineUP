@@ -24,6 +24,7 @@
   box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
   opacity: 100%;
   padding: 2px;
+  text-decoration: none;
 }
 
 .footer h3 {
@@ -36,7 +37,7 @@
 }
 
 .footer span {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
