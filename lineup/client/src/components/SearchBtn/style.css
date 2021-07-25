@@ -3,13 +3,15 @@
 .searchForm.searchForm{
   background-color: transparent;
   border-style: none;
+  border-radius: 15px;
+  border-width: inherit;
   /* color: white; */
 }
 
 .searchbtn.form-inline.searchbtn.form-inline{
   border-color:#939d9e;
-  border-style:solid;
-  border-width: thin;
+  border-style: solid;
+  border-width: 1.75px;
   border-radius: 10px;
   font-family: comfortaa;
 }
