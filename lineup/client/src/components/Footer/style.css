@@ -35,6 +35,10 @@
   color: blueviolet;
 }
 
+.footer.logoutBtn:link{
+  text-decoration: none;
+}
+
 .footer span {
   position: absolute;
   bottom: 0;
