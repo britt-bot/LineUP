@@ -7,10 +7,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lineuplist");
 
 const userSeed = [
   {
-    firstName: "Dennis",
-    lastName: "(the) Menace",
-    email: "Dennisthemenace@gmail.com",
-    password: "candice",
+    favorites: ["Sw1A_ZAr6Gkd_fepKt"]
   },
 ];
 

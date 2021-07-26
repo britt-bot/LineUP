@@ -6,7 +6,6 @@ import Discover from "./pages/Discover";
 import Search from "./pages/Search";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
-import Users from "./pages/Users";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
@@ -18,7 +17,6 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        <Users />
         <Wrapper>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/login" component={Login} />

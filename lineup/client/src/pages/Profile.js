@@ -1,36 +1,41 @@
-import React from "react";
-import ProgressLanding from "../components/ProgressLanding";
-// import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import ProfileCard from "../components/ProfileCard";
+import axios from "axios";
+import SearchResultsCard from "../components/SearchResultsCard";
 // import photo from "../components/images/cat-avatar.jpg";
 
 function Profile() {
-  const photo = { photo };
-  const userName = { userName };
-  const location = { location };
+  // const photo = { photo };
+  // const userName = { userName };
+  // const location = { location };
+  const [favoritesData, setFavoritesData] = useState([]);
 
-  const favorites = [
-    {
-      id: "1",
-      photo:
-        "https://api-cdn.spott.tv/rest/v004/image/images/e91f9cad-a70c-4f75-9db4-6508c37cd3c0?width=587&height=599",
-      userName: "Mike Ross",
-      content:
-        "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. ",
-      createdAt: 1543858000000,
-    },
-  ];
+  const favorites = ["vv17FZ4gGkMOlE5L", "G5vjZplRb0PI4"];
+  useEffect(() => {
+    let tempArray = [];
+    favorites.map((favorite) => {
+      const url = `https://app.ticketmaster.com/discovery/v2/events/${favorite}?apikey=${process.env.REACT_APP_EVENT_API_KEY}`;
+      axios
+        .get(url)
+        .then((res) => {
+          // setFavoritesData([...favoritesData, res.data]);
+          tempArray.push(res.data);
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
+    console.log("tempArray", tempArray);
+    setFavoritesData(tempArray);
+  }, []);
 
   return (
-    <div style={{ margin: "0 auto", width: "100%" }}>
-      {/* <Profile photo={photo} 
-        userName={userName} 
-        location={location} 
-        initialLikesCount={0} 
-        initialFollowingCount={0} 
-        initialFollowersCount={0} 
-        initialFaves={favorites} /> */}
-      <ProgressLanding>      
-      </ProgressLanding>
+    <div>
+      {favoritesData.map((favorite) => {
+        return <SearchResultsCard festival={favorite} />;
+      })}
     </div>
   );
 }
