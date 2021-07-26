@@ -21,7 +21,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-40%, -40%);
 }
 
 ion-icon {
@@ -50,8 +50,7 @@ ion-icon {
 }
 
 
-
-@media (min-width: 990px) {
+@media (max-width: 990px) {
   .searchbtn.form-inline{
     display: flex;
   position: absolute;
