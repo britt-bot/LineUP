@@ -78,6 +78,7 @@ function Searchbtn() {
       <Button
         className="searchclick"
         variant="outline"
+        type="submit"
         onClick={handleClick}
       >
         <ion-icon name="search-outline"></ion-icon>
