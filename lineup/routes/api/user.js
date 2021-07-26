@@ -159,8 +159,17 @@ router.post("/refreshToken", (req, res, next) => {
 });
 
 router.get("/me", (req, res, next) => {
-    res.send(req.user);
-});
+    const userID = req.body._id
+    User.findById(userID).then(
+            (user) => {
+                res.send(req.user);
+                });
+            },
+            (err) => {
+                // next(err)
+                console.log(err)
+    }
+);
 
 router.get("/logout", verifyUser, (req, res, next) => {
   const { signedCookies = {} } = req;

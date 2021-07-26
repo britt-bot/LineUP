@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\client",
+    "\\client\\src",
+    "\\client\\src\\components",
+    "\\client\\src\\components\\SignupForm",
     "\\models",
+    "\\routes",
+    "\\routes\\api",
     "\\strategies"
   ],
   "SelectedNode": "\\strategies\\localStrategies.js",
