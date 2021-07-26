@@ -1,6 +1,6 @@
-const express = require("express")
-const router = express.Router()
-const User = require("../../models/user")
+const express = require("express");
+const router = express.Router();
+const User = require("../../models/user");
 const passport = require("passport");
 const jwt = require("jsonwebtoken");
 const alert = require("alert");
@@ -57,51 +57,52 @@ router.post("/add", (req, res, next) => {
 });
 
 router.post("/login", passport.authenticate("local"), (req, res, next) => {
-    console.log("Login");
-    console.log(req);
-    const token = getToken({ _id: req.user._id });
-    const refreshToken = getRefreshToken({ _id: req.user._id });
-    const _id = req.user._id;
-    User.findById(req.user._id).then(
-        (user) => {
-            user.refreshToken.push({ refreshToken });
-            user.save((err, user) => {
-                if (err) {
-                    res.statusCode = 500;
-                    res.send(err);
-                } else {
-                    res.cookie("refreshToken", refreshToken, COOKIE_OPTIONS);
-                    res.send({ success: true, token, _id});
-                }
-            });
-        },
-        (err) => next(err)
-    );
+  console.log("Login");
+  console.log(req);
+  const token = getToken({ _id: req.user._id });
+  const refreshToken = getRefreshToken({ _id: req.user._id });
+  const _id = req.user._id;
+  User.findById(req.user._id).then(
+    (user) => {
+      user.refreshToken.push({ refreshToken });
+      user.save((err, user) => {
+        if (err) {
+          res.statusCode = 500;
+          res.send(err);
+        } else {
+          res.cookie("refreshToken", refreshToken, COOKIE_OPTIONS);
+          res.send({ success: true, token, _id });
+          alert("You have logged in!");
+        }
+      });
+    },
+    (err) => next(err)
+  );
 });
 
 router.post("/favorite", (req, res, next) => {
-    console.log("favorite");
-    const userID = req.body._id
-    console.log(userID);
-    User.findById(userID).then(
-        (user) => {
-            console.log(user);
-            user.favorites.push (req.body.favorites)
-            user.save((err, user) => {
-                if (err) {
-                    console.log("Save error")
-                    res.statusCode = 500;
-                    res.send(err);
-                } else {
-                    res.send({ success: true });
-                }
-            });
-        },
-        (err) => {
-        // next(err)
-        console.log(err)
+  console.log("favorite");
+  const userID = req.body._id;
+  console.log(userID);
+  User.findById(userID).then(
+    (user) => {
+      console.log(user);
+      user.favorites.push(req.body.favorites);
+      user.save((err, user) => {
+        if (err) {
+          console.log("Save error");
+          res.statusCode = 500;
+          res.send(err);
+        } else {
+          res.send({ success: true });
         }
-    );
+      });
+    },
+    (err) => {
+      // next(err)
+      console.log(err);
+    }
+  );
 });
 
 router.post("/refreshToken", (req, res, next) => {
@@ -158,17 +159,18 @@ router.post("/refreshToken", (req, res, next) => {
   }
 });
 
-router.get("/me", (req, res, next) => {
-    const userID = req.body._id
-    User.findById(userID).then(
-            (user) => {
-                res.send(req.user);
-                });
-            },
-            (err) => {
-                // next(err)
-                console.log(err)
-    }
+router.get(
+  "/me",
+  (req, res, next) => {
+    const userID = req.body._id;
+    User.findById(userID).then((user) => {
+      res.send(req.user);
+    });
+  },
+  (err) => {
+    // next(err)
+    console.log(err);
+  }
 );
 
 router.get("/logout", verifyUser, (req, res, next) => {
