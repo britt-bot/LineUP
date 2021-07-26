@@ -6,7 +6,7 @@ const router = express.Router();
 const User = require("../../models/user");
 const passport = require("passport");
 const jwt = require("jsonwebtoken");
-const flash = require("connect-flash");
+const alert = require("alert");
 const {
   getToken,
   COOKIE_OPTIONS,
@@ -50,6 +50,7 @@ router.post("/add", (req, res, next) => {
               console.log(user);
               res.cookie("refreshToken", refreshToken, COOKIE_OPTIONS);
               res.send({ success: true, token });
+              alert("You have created an account!");
             }
           });
         }
@@ -73,6 +74,7 @@ router.post("/login", passport.authenticate("local"), (req, res, next) => {
         } else {
           res.cookie("refreshToken", refreshToken, COOKIE_OPTIONS);
           res.send({ success: true, token });
+          alert("You're Signed in!");
         }
       });
     },
