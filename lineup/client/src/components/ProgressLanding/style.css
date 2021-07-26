@@ -1,5 +1,4 @@
 .ProgressLanding {
-  height: 150px;
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
@@ -8,7 +7,7 @@
   border-top-style: groove;
   font-family: comfortaa;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .ProgressLanding h2 {
@@ -30,4 +29,10 @@
   opacity: 90%;
   text-decoration: none;
   padding: 6px !important;
+}
+
+@media (min-width: 992px){
+  .ProgressLanding {
+    max-height: fit-content;
+  }
 }

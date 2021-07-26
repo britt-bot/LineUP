@@ -37,7 +37,7 @@ function Navbar() {
             Home
           </Link>
           <Link
-            to="/Login"
+            to="/login"
             className={
               window.location.pathname === "/login"
                 ? "nav-link active"
