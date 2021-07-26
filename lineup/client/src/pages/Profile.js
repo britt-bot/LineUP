@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import ProgressLanding from "../components/ProgressLanding";
+// import { Link } from "react-router-dom";
 // import photo from "../components/images/cat-avatar.jpg";
 
 function Profile() {
@@ -28,11 +29,12 @@ function Profile() {
         initialFollowingCount={0} 
         initialFollowersCount={0} 
         initialFaves={favorites} /> */}
-      <h2>
-        In Progress, please return <Link to="/">home</Link>.
-      </h2>
+      <ProgressLanding>      
+      </ProgressLanding>
     </div>
   );
 }
+
+
 
 export default Profile;
