@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import API from "../../utils/API";
+import { UserContext } from "../../context/UserContext";
 import "./style.css";
 
 function LoginForm() {
@@ -19,7 +20,13 @@ function LoginForm() {
     console.log(login);
     e.preventDefault();
     API.loginForm(login)
-      .then((res) => console.log(res.data))
+      .then((res) => {
+        let inMemoryID = res.data._id;
+        console.log(inMemoryID);
+        localStorage.setItem('user', JSON.stringify(res));
+        console.log(res.data)
+        console.log(res.data.token)
+      })
       .catch((err) => console.log(err));
   }
 

@@ -13,12 +13,14 @@ exports.COOKIE_OPTIONS = {
 }
 
 exports.getToken = user => {
+    console.log("Get Token")
     return jwt.sign(user, process.env.JWT_SECRET, {
         expiresIn: eval(process.env.SESSION_EXPIRY),
     })
 }
 
 exports.getRefreshToken = user => {
+    console.log("Refresh Token")
     const refreshToken = jwt.sign(user, process.env.REFRESH_TOKEN_SECRET, {
         expiresIn: eval(process.env.REFRESH_TOKEN_EXPIRY),
     })

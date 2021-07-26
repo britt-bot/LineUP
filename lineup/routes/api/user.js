@@ -1,6 +1,3 @@
-////const router = require("express").Router();
-////const userController = require("../../controllers/userController");
-
 const express = require("express")
 const router = express.Router()
 const User = require("../../models/user")
@@ -58,6 +55,7 @@ router.post("/login", passport.authenticate("local"), (req, res, next) => {
     console.log(req);
     const token = getToken({ _id: req.user._id });
     const refreshToken = getRefreshToken({ _id: req.user._id });
+    const _id = req.user._id;
     User.findById(req.user._id).then(
         (user) => {
             user.refreshToken.push({ refreshToken });
@@ -67,7 +65,7 @@ router.post("/login", passport.authenticate("local"), (req, res, next) => {
                     res.send(err);
                 } else {
                     res.cookie("refreshToken", refreshToken, COOKIE_OPTIONS);
-                    res.send({ success: true, token });
+                    res.send({ success: true, token, _id});
                 }
             });
         },
@@ -75,25 +73,28 @@ router.post("/login", passport.authenticate("local"), (req, res, next) => {
     );
 });
 
-router.post("/favorite", passport.authenticate("local"), (req, res, next) => {
+router.post("/favorite", (req, res, next) => {
     console.log("favorite");
-    console.log(req);
-    User.findById(req.user._id).then(
+    const userID = req.body._id
+    console.log(userID);
+    User.findById(userID).then(
         (user) => {
-            console.log(user.favorites)
-            user.favorites.push (favorite)
+            console.log(user);
+            user.favorites.push (req.body.favorites)
             user.save((err, user) => {
                 if (err) {
                     console.log("Save error")
                     res.statusCode = 500;
                     res.send(err);
                 } else {
-                    console.log(res);
                     res.send({ success: true });
                 }
             });
         },
-        (err) => next(err)
+        (err) => {
+        // next(err)
+        console.log(err)
+        }
     );
 });
 
@@ -151,7 +152,7 @@ router.post("/refreshToken", (req, res, next) => {
     }
 });
 
-router.get("/me", verifyUser, (req, res, next) => {
+router.get("/me", (req, res, next) => {
     res.send(req.user);
 });
 
