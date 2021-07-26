@@ -25,7 +25,23 @@ function FavoriteBtn(props) {
               .catch((err) => console.log(err));
       }
 
-  };
+    };
+
+    /*
+     * For Catherine
+     * const localstorage_user = JSON.parse(localStorage.getItem('user'))
+        if (localstorage_user === null) {
+            return
+        }
+        else {
+        const userFavorites = localstorage_user.data._id
+        const favoritePacket = {
+            _id: userFavorites
+        }
+        API.getUser(favoritePacket)
+              .then((res) => console.log(res.data))
+              .catch((err) => console.log(err));
+     */
 
   return (
     <Button
