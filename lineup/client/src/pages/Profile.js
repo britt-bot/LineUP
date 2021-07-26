@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ProfileCard from "../components/ProfileCard";
 import axios from "axios";
 import SearchResultsCard from "../components/SearchResultsCard";
+import ProgressLanding from "../components/ProgressLanding";
 // import photo from "../components/images/cat-avatar.jpg";
 
 function Profile() {
@@ -33,11 +34,15 @@ function Profile() {
 
   return (
     <div>
-      {favoritesData.map((favorite) => {
+      {/* {favoritesData.map((favorite) => {
         return <SearchResultsCard festival={favorite} />;
-      })}
+      })} */}
+      <ProgressLanding>      
+      </ProgressLanding>
     </div>
   );
 }
+
+
 
 export default Profile;

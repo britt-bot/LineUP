@@ -23,8 +23,8 @@ function Footer() {
           <div className="row">
             <div className="col-xl-6 col-md-4 col-sm-4 my-auto mx-auto a">
               <h3 className="mb-md-0 mb-5 bold-text">LINEUP</h3>
-              <div className="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
-                <p className="social mb-0 pb-0 bold-text">
+              <div className="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end iconalign">
+                <p className="social mb-0 pb-0">
                   <a
                     href="https://www.facebook.com/pickthebestLINEUP"
                     className={window.location.pathname === "/"}
