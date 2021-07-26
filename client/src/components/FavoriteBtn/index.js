@@ -5,7 +5,8 @@ import API from "../../utils/API";
 function FavoriteBtn(props) {
   const [isFavorite, setIsFavorite] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = (id) => {
+    console.log("testing ", id);
     setIsFavorite(!isFavorite);
       const localstorage_user = JSON.parse(localStorage.getItem('user'))
       if (localstorage_user === null) {
@@ -48,7 +49,7 @@ function FavoriteBtn(props) {
       style={{ color: isFavorite ? "#FFD700" : "black" }}
       className="favBtn"
       variant="outline-transparent"
-      onClick={handleClick}
+      onClick={()=>handleClick(props.id)}
       id={props.id}
     >
       <ion-icon
