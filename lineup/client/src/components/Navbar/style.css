@@ -32,16 +32,14 @@ nav.navbar.navbar-default {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color:  #212529 !important;
+  color: #212529 !important;
   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FF3399 80%, #00C0FF 100%);
   animation:slidebg 5s linear infinite;
   border-radius: 15px;
   box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
   opacity: 90%;
   text-decoration: none;
-  padding-bottom: 0 !important;
 }
-
 
 .navbar-dark .navbar-nav .nav-link.active {
   color: #00C0FF !important;
@@ -57,12 +55,27 @@ nav.navbar.navbar-default {
   border: none !important;
 }
 
+.navbar-dark .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.1rem;
+}
+
+.navbar-dark .navbar-toggler:hover {
+  color: #212529 !important;
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FF3399 80%, #00C0FF 100%);
+  animation:slidebg 5s linear infinite;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
+  opacity: 90%;
+  text-decoration: none;
+}
+
 .navbar-toggler-icon {
   color: #939d9e !important;
 }
 
 .navbar-toggler-icon:hover {
   color: #212529 !important;
+  vertical-align: middle;
 }
 
 /* .dropdown-menu .show{

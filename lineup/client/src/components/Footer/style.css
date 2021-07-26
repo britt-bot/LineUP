@@ -54,6 +54,19 @@
   color:#939d9e !important;
   text-decoration: none !important;
   padding: 0 !important;
+  border: none !important;
+  border-radius: 15px !important;
+}
+
+.logoutBtn:focus {
+  border-radius: 15px !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.logoutBtn:focus:hover {
+  box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e !important;
 }
 
 .logoutBtn:hover {

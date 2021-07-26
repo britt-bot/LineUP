@@ -8,20 +8,17 @@
   /* color: white; */
 }
 
-.searchbtn.form-inline.searchbtn.form-inline{
+.searchbtn.form-inline{
   border-color:#939d9e;
   border-style: solid;
   border-width: 1.75px;
   border-radius: 10px;
   font-family: comfortaa;
-}
-
-.searchbtn.form-inline {
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 25% !important;
   left: 50%;
-  transform: translate(-40%, -40%);
+  transform: translate(-40%, 0%);
 }
 
 ion-icon {
@@ -51,11 +48,10 @@ ion-icon {
 
 
 @media (max-width: 990px) {
-  .searchbtn.form-inline{
+  .searchbtn.form-inline {
     display: flex;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-40%, -40%)
-}
+    position: absolute;
+    top: 22% !important;
+    left: 50%;
+  }
 }
