@@ -93,6 +93,11 @@ function Footer() {
                 <li>
                   <FaArrowRight style={iconStyles} />{" "}
                   <Button
+                    style={{
+                      textDecoration: "none",
+                      color: "#939d9e",
+                      paddingLeft: "0px",
+                    }}
                     variant="link"
                     // onClick={handleLogout}
                     className="logoutBtn"
