@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ProgressLanding from "../components/ProgressLanding";
+// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import API from "../utils/API";
 // import axios from "axios";
+// import "../App.css";
 
 function Discover() {
   return (
     <div>
-      <ProgressLanding>
+      <ProgressLanding>      
       </ProgressLanding>
     </div>
   );

@@ -9,7 +9,7 @@
   animation:slidebg 5s linear infinite;
   border-radius: 100px;
   box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
-  opacity: 100%;
+  opacity: 90%;
   transform: translate(0%, 7%);
 }
 
