@@ -39,9 +39,8 @@ nav.navbar.navbar-default {
   box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
   opacity: 90%;
   text-decoration: none;
-  width: 15%;
   padding: 6px !important;
-
+  vertical-align: middle;
 }
 
 

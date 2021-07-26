@@ -5,6 +5,11 @@
   padding-left: 0;
 }
 
+.iconalign {
+  padding-left: 0 !important;
+  padding-right: 0;
+}
+
 .footer {
   max-height: 500px;
   min-height: 50px;
@@ -43,14 +48,12 @@
 
 .footer h6 {
   color: blueviolet;
-
 }
 
 .logoutBtn {
   color:#939d9e !important;
   text-decoration: none !important;
-  padding-left: 0 !important;
-  padding-top: 0 !important;
+  padding: 0 !important;
 }
 
 .logoutBtn:hover {
@@ -59,11 +62,11 @@
   animation:slidebg 5s linear infinite;
   border-radius: 15px;
   box-shadow: inset 0px 0px 25px 0px #212529, 0px 0px 25px 5px #939d9e;
-  opacity: 100%;
+  opacity: 90%;
   padding-left: 6px !important;
   padding-right: 6px !important;
-  padding-top: 3px !important;
-  padding-bottom: 3px !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
   text-decoration: none;
   border: none;
 }
@@ -89,7 +92,6 @@
   .footer span{
     max-width: fit-content;
   }
-
   .row {
     padding-right: inherit !important;
   }
