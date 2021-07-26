@@ -20,7 +20,7 @@ function FavoriteBtn(props) {
           }
           console.log(props);
           console.log(props.id);
-          API.favoriteSave(favoriteInfo)
+          API.getUser(favoriteInfo)
               .then((res) => console.log(res.data))
               .catch((err) => console.log(err));
       }

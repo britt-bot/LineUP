@@ -4,12 +4,14 @@
     "\\client",
     "\\client\\src",
     "\\client\\src\\components",
-    "\\client\\src\\components\\SignupForm",
-    "\\models",
+    "\\client\\src\\components\\FavoriteBtn",
+    "\\client\\src\\components\\ProfileCard",
+    "\\client\\src\\components\\ProgressLanding",
+    "\\client\\src\\pages",
     "\\routes",
     "\\routes\\api",
     "\\strategies"
   ],
-  "SelectedNode": "\\strategies\\localStrategies.js",
+  "SelectedNode": "\\client\\src\\components\\FavoriteBtn\\index.js",
   "PreviewInSolutionExplorer": false
 }

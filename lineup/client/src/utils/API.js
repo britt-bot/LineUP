@@ -1,8 +1,10 @@
 import axios from "axios";
 
 export default {
-  getUser: function (data) {
-    return axios.get("/api/user/me", data);
+    getUser: function (data) {
+        console.log("axios.me")
+        console.log(data)
+    return axios.post("/api/user/me", data);
   },
   createUser: function (data) {
     console.log("axios.create");

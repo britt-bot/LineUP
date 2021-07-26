@@ -158,11 +158,13 @@ router.post("/refreshToken", (req, res, next) => {
   }
 });
 
-router.get("/me", (req, res, next) => {
+router.post("/me", (req, res, next) => {
+    console.log(req.body)
     const userID = req.body._id
     User.findById(userID).then(
-            (user) => {
-                res.send(req.user);
+        (user) => {
+            console.log(user);
+                res.send(user);
                 });
             },
             (err) => {
