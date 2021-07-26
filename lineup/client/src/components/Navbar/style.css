@@ -1,6 +1,6 @@
-/* nav {
-  height: 110px !important;
-} */
+.navbar {
+  font-family: comfortaa;
+}
 
 .logo {
   margin-left: 10px;
@@ -28,7 +28,6 @@ nav.navbar.navbar-default {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #939d9e !important;
-  font-family: comfortaa;
   text-decoration: none;
 }
 
@@ -43,7 +42,7 @@ nav.navbar.navbar-default {
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
-  color: rgba(255, 255, 255, 0.952) !important;
+  color: #00C0FF !important;
 }
 
 .navbar-dark .navbar-nav .nav-link.active:hover {
@@ -52,7 +51,6 @@ nav.navbar.navbar-default {
 
 .navbar-dark .navbar-toggler {
   color: #939d9e !important;
-  font-family: comfortaa;
   border-radius: 15px;
   border: none !important;
 }
