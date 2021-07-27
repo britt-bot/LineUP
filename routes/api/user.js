@@ -83,26 +83,42 @@ router.post("/login", passport.authenticate("local"), (req, res, next) => {
 router.post("/favorite", (req, res, next) => {
   console.log("favorite");
   const userID = req.body._id;
+  const favoriteData = {"request": req.body.favorites}
+  // var favoriteData = [];
+  // favoriteData.push(req.body.favorites)
+  console.log(req.body.favorites)
   console.log(userID);
-  User.findById(userID).then(
-    (user) => {
-      console.log(user);
-      user.favorites.push(req.body.favorites);
-      user.save((err, user) => {
-        if (err) {
-          console.log("Save error");
-          res.statusCode = 500;
-          res.send(err);
-        } else {
-          res.send({ success: true });
-        }
-      });
-    },
-    (err) => {
-      // next(err)
-      console.log(err);
-    }
-  );
+  User.findOneAndUpdate(userID, { $addToSet:  {favorites: favoriteData}}, {new:true}).then(
+          (err) => {
+            if (err) {
+              console.log("Save error");
+              console.log(err);
+              res.statusCode = 500;
+              res.send(err);
+            } else {
+              res.send({ success: true });
+            }
+          })
+  
+  // User.findById(userID).then(
+  //   (user) => {
+  //     console.log(user);
+  //     user.favorites = req.body.favorites;
+  //     user.save((err, user) => {
+  //       if (err) {
+  //         console.log("Save error");
+  //         res.statusCode = 500;
+  //         res.send(err);
+  //       } else {
+  //         res.send({ success: true });
+  //       }
+  //     });
+  //   },
+  //   (err) => {
+  //     // next(err)
+  //     console.log(err);
+  //   }
+  // );
 });
 
 router.post("/refreshToken", (req, res, next) => {

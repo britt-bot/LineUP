@@ -27,7 +27,7 @@ function SearchResultsCard(props) {
         <Card.Link href={ticket} target="_blank">
           Buy Tickets
         </Card.Link>
-        <FavoriteBtn id={id}/>
+        <FavoriteBtn id={id} name={name} status={status} date={date} start={start} venues={venues} ticket={ticket} logo={logo}/>
       </Card.Body>
     </Card>
   );
