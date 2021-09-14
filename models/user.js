@@ -20,7 +20,7 @@ const User = new Schema({
         default: "",
     },
     favorites: {
-        type: [String],
+        type: Array,
         default: []
     },
     authStrategy: {

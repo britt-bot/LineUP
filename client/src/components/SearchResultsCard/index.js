@@ -11,7 +11,7 @@ function SearchResultsCard(props) {
   } = props;
 
   return (
-    <Card className="cardGroup" style={props.style}>
+    <Card key={id} className="cardGroup" style={props.style}>
       <Card.Img variant="top" src={logo} />
       <Card.Body>
         <Card.Title className="cardTitle">{name}</Card.Title>
@@ -27,7 +27,7 @@ function SearchResultsCard(props) {
         <Card.Link href={ticket} target="_blank">
           Buy Tickets
         </Card.Link>
-        <FavoriteBtn id={id}/>
+        <FavoriteBtn id={id} name={name} status={status} date={date} start={start} venues={venues} ticket={ticket} logo={logo}/>
       </Card.Body>
     </Card>
   );

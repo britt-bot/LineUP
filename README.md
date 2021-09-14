@@ -2,8 +2,9 @@
 
 ## Description 
 
-"Pick the best LineUP"
-LineUP is an app for every festival lover. We are bringing all the festivals around the world to you AND also giving you the power to dream of your ideal LineUP and the LineUP community can upvote the best LineUPs. 
+"Pick the best LINEUP"
+LINEUP is the app for every festival lover! LINEUP is all about festivals, from all over the world, all of the time. 
+We are bringing all the festivals around the world to you AND also giving you the power to dream of your ideal LINEUP and let the LINEUP community vote for the best LINEUPs. 
 
 
 ## Table of Contents 
@@ -20,15 +21,15 @@ This table of contents is to make it easy for users to find what they need.
 
 Open the desired web browser and go to the page url for either the Repo or the Deployed project.
 
-[Group Project #3 - LineUP GitHub Repo](https://github.com/britt-bot/Group_Project3)
-<!-- [Group Project #3 - LineUP GitHub Deploy]()
-[Group Project #3 - LineUP Heroku Deploy]() -->
+[Group Project #3 - LINEUP GitHub Repo](https://github.com/britt-bot/Group_Project3)
+<!-- [Group Project #3 - LineUP GitHub Deploy]() -->
+[Group Project #3 - LINEUP Heroku Deploy](https://lineup-festival.herokuapp.com/) 
 
 
 
 ## Usage 
 
-A README is a document used to explain an application. Including what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions.
+Use LINEUP to find all of the festivals all around the world all of the time. 
 
 
 ## Credits
@@ -71,4 +72,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-

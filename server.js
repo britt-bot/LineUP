@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(passport.initialize());
 app.use(passport.session());
-
+mongoose.set('useFindAndModify', false);
 const whitelist = process.env.WHITELISTED_DOMAINS
     ? process.env.WHITELISTED_DOMAINS.split(",")
     : [];

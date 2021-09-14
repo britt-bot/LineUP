@@ -27,25 +27,25 @@ function Footer() {
                 <p className="social mb-0 pb-0">
                   <a
                     href="https://www.facebook.com/pickthebestLINEUP"
-                    className={window.location.pathname === "/"}
+                    // className={window.location.pathname === "/"}
                   >
                     <FaFacebook />
                   </a>
                   <a
                     href="https://www.linkedin.com/company/pickthebest-lineup"
-                    className={window.location.pathname === "/"}
+                    // className={window.location.pathname === "/"}
                   >
                     <FaLinkedin />
                   </a>
                   <a
                     href="https://twitter.com/bestLINEUPapp"
-                    className={window.location.pathname === "/"}
+                    // className={window.location.pathname === "/"}
                   >
                     <FaTwitter />
                   </a>
                   <a
                     href="https://www.instagram.com/pickthebestlineup"
-                    className={window.location.pathname === "/"}
+                    // className={window.location.pathname === "/"}
                   >
                     <FaInstagram />
                   </a>
@@ -59,7 +59,7 @@ function Footer() {
               <ul className="list-unstyled">
                 <li>
                   <FaArrowRight style={iconStyles} />{" "}
-                  <Link to="/" className={window.location.pathname === "/"}>
+                  <Link to="/" >
                     Home
                   </Link>
                 </li>
@@ -67,7 +67,7 @@ function Footer() {
                   <FaArrowRight style={iconStyles} />{" "}
                   <Link
                     to="/login"
-                    className={window.location.pathname === "/login"}
+                    // className={window.location.pathname === "/login"}
                   >
                     Login/Sign Up
                   </Link>
@@ -76,7 +76,7 @@ function Footer() {
                   <FaArrowRight style={iconStyles} />{" "}
                   <Link
                     to="/profile"
-                    className={window.location.pathname === "/profile"}
+                    // className={window.location.pathname === "/profile"}
                   >
                     Profile
                   </Link>
@@ -85,7 +85,7 @@ function Footer() {
                   <FaArrowRight style={iconStyles} />{" "}
                   <Link
                     to="/discover"
-                    className={window.location.pathname === "/discover"}
+                    // className={window.location.pathname === "/discover"}
                   >
                     Discover
                   </Link>
@@ -113,7 +113,7 @@ function Footer() {
                     href="mailto:pickthebest.LINEUP@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={window.location.pathname === "/"}
+                    // className={window.location.pathname === "/"}
                   >
                     Email
                   </a>
@@ -121,10 +121,10 @@ function Footer() {
                 <li>
                   <FaGithub style={iconStyles1} />{" "}
                   <a
-                    href="https://github.com/britt-bot/Group_Project3/tree/main/lineup"
+                    href="https://github.com/britt-bot/Group_Project3"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={window.location.pathname === "/"}
+                    // className={window.location.pathname === "/"}
                   >
                     GitHub
                   </a>
@@ -135,7 +135,7 @@ function Footer() {
                     href="https://lineup-festival.herokuapp.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={window.location.pathname === "/"}
+                    // className={window.location.pathname === "/"}
                   >
                     Heroku
                   </a>

@@ -56,7 +56,7 @@ function SignupForm() {
           />
         </Form.Group>
 
-        <Form.Group size="lg" controlId="email">
+        <Form.Group size="lg" controlId="emailSignup">
           <Form.Label>Email Address</Form.Label>
           <Form.Control
             autoFocus
@@ -66,7 +66,7 @@ function SignupForm() {
           />
         </Form.Group>
 
-        <Form.Group size="lg" controlId="password">
+        <Form.Group size="lg" controlId="passwordSignup">
           <Form.Label>Password</Form.Label>
           <Form.Control
             autoFocus
