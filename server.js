@@ -1,6 +1,6 @@
 const express = require("express");
-var passport = require('passport')
-    , LocalStrategy = require('passport-local').Strategy;
+var passport = require("passport"),
+  LocalStrategy = require("passport-local").Strategy;
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const session = require("express-session");
@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3001;
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
+  app.use(express.static("client/build"));
 }
 
 // Define middleware here
@@ -28,10 +28,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(passport.initialize());
 app.use(passport.session());
-mongoose.set('useFindAndModify', false);
+mongoose.set("useFindAndModify", false);
 const whitelist = process.env.WHITELISTED_DOMAINS
-    ? process.env.WHITELISTED_DOMAINS.split(",")
-    : [];
+  ? process.env.WHITELISTED_DOMAINS.split(",")
+  : [];
 
 //const corsOptions = {
 //    origin: function (origin, callback) {
@@ -56,7 +56,7 @@ app.use(routes);
 // Connect to the Mongo DB
 /*mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lineuplist");*/
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
 
