@@ -11,7 +11,7 @@ function SearchResultsCard(props) {
   } = props;
 
   return (
-    <Card className="cardGroup" style={props.style}>
+    <Card key={id} className="cardGroup" style={props.style}>
       <Card.Img variant="top" src={logo} />
       <Card.Body>
         <Card.Title className="cardTitle">{name}</Card.Title>
