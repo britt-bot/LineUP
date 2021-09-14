@@ -7,6 +7,25 @@ function FavoriteBtn(props) {
 
   const handleClick = (props) => {
     setIsFavorite(!isFavorite);
+<<<<<<< HEAD
+    const localstorage_user = JSON.parse(localStorage.getItem("user"));
+    if (localstorage_user === null) {
+      return;
+    } else {
+      const inMemoryID = localstorage_user.data._id;
+      console.log(inMemoryID);
+      const favoriteInfo = {
+        favorites: props.id,
+        _id: inMemoryID,
+      };
+      console.log(props);
+      console.log(props.id);
+      API.favoriteSave(favoriteInfo)
+        .then((res) => console.log(res.data))
+        .catch((err) => console.log(err));
+    }
+  };
+=======
       const localstorage_user = JSON.parse(localStorage.getItem('user'))
       if (localstorage_user === null) {
           return
@@ -37,8 +56,9 @@ function FavoriteBtn(props) {
       }
 
     };
+>>>>>>> 13e8eea389329314e80521c19616a3168e1ea0b8
 
-    /*
+  /*
      * For Catherine
      * const localstorage_user = JSON.parse(localStorage.getItem('user'))
         if (localstorage_user === null) {
