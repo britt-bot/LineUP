@@ -7,25 +7,15 @@ function FavoriteBtn(props) {
 
   const handleClick = (props) => {
     setIsFavorite(!isFavorite);
+<<<<<<< HEAD
     const localstorage_user = JSON.parse(localStorage.getItem("user"));
     if (localstorage_user === null) {
       return;
     } else {
       const inMemoryID = localstorage_user.data._id;
       console.log(inMemoryID);
-      console.log("props");
-      console.log(props);
       const favoriteInfo = {
-        favorites: [
-          { id: props.id },
-          { name: props.name },
-          { logo: props.logo },
-          { status: props.status },
-          { date: props.date },
-          { start: props.start },
-          { venues: props.venues },
-          { ticket: props.ticket },
-        ],
+        favorites: props.id,
         _id: inMemoryID,
       };
       console.log(props);
@@ -35,6 +25,38 @@ function FavoriteBtn(props) {
         .catch((err) => console.log(err));
     }
   };
+=======
+      const localstorage_user = JSON.parse(localStorage.getItem('user'))
+      if (localstorage_user === null) {
+          return
+      }
+      else {
+          const inMemoryID = localstorage_user.data._id
+          console.log(inMemoryID)
+          console.log("props")
+          console.log(props)
+          const favoriteInfo = {
+              favorites: [
+                {id: props.id},
+                {name: props.name},
+                {logo: props.logo},
+                {status: props.status},
+                {date: props.date},
+                {start: props.start},
+                {venues: props.venues},
+                {ticket: props.ticket}
+              ],
+              _id: inMemoryID
+          }
+          console.log(props);
+          console.log(props.id);
+          API.favoriteSave(favoriteInfo)
+              .then((res) => console.log(res.data))
+              .catch((err) => console.log(err));
+      }
+
+    };
+>>>>>>> 13e8eea389329314e80521c19616a3168e1ea0b8
 
   /*
      * For Catherine
@@ -57,7 +79,7 @@ function FavoriteBtn(props) {
       style={{ color: isFavorite ? "#FFD700" : "black" }}
       className="favBtn"
       variant="outline-transparent"
-      onClick={() => handleClick(props)}
+      onClick={()=>handleClick(props)}
       id={props.id}
       name={props.name}
     >
