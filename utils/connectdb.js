@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
-require('dotenv').config();
+require("dotenv").config();
 const url = process.env.MONGO_DB_CONNECTION_STRING;
 const connect = mongoose.connect(url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
 });
 connect
-    .then((db) => {
-        console.log("connected to db");
-    })
-    .catch((err) => {
-        console.log(err);
-    });
+  .then((db) => {
+    console.log("connected to db");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
