@@ -1,7 +1,6 @@
 import React from "react";
 import ProgressLanding from "../components/ProgressLanding";
 // import { Link } from "react-router-dom";
-import { Link } from "react-router-dom";
 // import API from "../utils/API";
 // import axios from "axios";
 // import "../App.css";
