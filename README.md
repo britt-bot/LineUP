@@ -23,6 +23,7 @@ This table of contents is to make it easy for users to find what they need.
 Open the desired web browser and go to the page url for either the Repo or the Deployed project.
 
 [LINEUP GitHub Repo](https://github.com/britt-bot/Group_Project3)
+
 [LINEUP Heroku Deploy](https://lineup-festival.herokuapp.com/) 
 
 
