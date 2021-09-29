@@ -1,4 +1,4 @@
-# Group Project #3 - LineUP
+# LINEUP
 
 ## Description 
 
@@ -21,15 +21,14 @@ This table of contents is to make it easy for users to find what they need.
 
 Open the desired web browser and go to the page url for either the Repo or the Deployed project.
 
-[Group Project #3 - LINEUP GitHub Repo](https://github.com/britt-bot/Group_Project3)
-<!-- [Group Project #3 - LineUP GitHub Deploy]() -->
-[Group Project #3 - LINEUP Heroku Deploy](https://lineup-festival.herokuapp.com/) 
+[LINEUP GitHub Repo](https://github.com/britt-bot/Group_Project3)
+[LINEUP Heroku Deploy](https://lineup-festival.herokuapp.com/) 
 
 
 
 ## Usage 
 
-Use LINEUP to find all of the festivals all around the world all of the time. 
+Use LINEUP to find ALL of the festivals ALL around the world ALL of the time. 
 
 
 ## Credits
@@ -53,7 +52,7 @@ Third Party Assets:
 
 MIT License
 
-Copyright (c) 2021 LineUP
+Copyright (c) 2021 LINEUP
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
