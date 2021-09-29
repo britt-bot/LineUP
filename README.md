@@ -2,7 +2,8 @@
 
 ## Description 
 
-"Pick the best LINEUP"
+"Pick the best LINEUP!"
+
 LINEUP is the app for every festival lover! LINEUP is all about festivals, from all over the world, all of the time. 
 We are bringing all the festivals around the world to you AND also giving you the power to dream of your ideal LINEUP and let the LINEUP community vote for the best LINEUPs. 
 
