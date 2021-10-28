@@ -32,6 +32,8 @@ Open the desired web browser and go to the page url for either the Repo or the D
 
 Use LINEUP to find ALL of the festivals ALL around the world ALL of the time. 
 
+![lineup](https://user-images.githubusercontent.com/77466708/139318882-3466ce0e-0dd7-4253-8455-dfd1beb8f1e2.png)
+
 
 ## Credits
 
